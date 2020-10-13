@@ -5,7 +5,7 @@ import Pdf from '../assets/RAM-resume.pdf';
 
 const ProfileImage = styled.img`
   width: 10em;
-  height: 11em;
+  height: 10em;
   border-radius: 50%;
 `;
 
@@ -41,7 +41,7 @@ class Header extends Component {
         </Link>
         <div>
           <NavLink to='/'>ABOUT</NavLink>
-          <NavLink to='/code'>CODE</NavLink>
+          <NavLink to='/code'>PORTFOLIO</NavLink>
           <NavLink to='/contact'>CONTACT</NavLink>           
            {/* <NavLink to=''>RESUME</NavLink> */}
            <NavLink href ={Pdf} target="_black">RESUME</NavLink>
