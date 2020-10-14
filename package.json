@@ -2,7 +2,7 @@
   "name": "reactportfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://myusername.github.io/my-app",
+  "homepage": "https://ram-sah.github.io/React-Portfolio",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "react": "^15.6.1",
