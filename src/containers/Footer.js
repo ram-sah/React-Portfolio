@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { ColorScheme } from '../theme/styleConstants.js'
 
 const FooterDiv = styled.div`
   padding-top: 3rem;
   padding-bottom: 0;
-  
+  background-color: ${ColorScheme.mainLight};
   text-align: center;
   height: 150px;
 `;
@@ -21,7 +22,7 @@ const SocialIcon = styled.li`
 
 const FAIcon = styled.i`
   &:hover {
-   
+    color: ${ColorScheme.third}
     transition: all .3s ease;
     transform: scale(1.1) translateY(-5px);
   }

@@ -1,6 +1,6 @@
 # React-Portfolio
-[![License: Apache](https://img.shields.io/badge/License-Apache2.0-green.svg)](https://opensource.org/licenses/Apache)
-[![LanguageCount](https://img.shields.io/github/languages/count/ram-sah/portfolio)](https://github.com/ram-sah/portfolio)
+[![License: Apache](https://img.shields.io/badge/License-Apache2.0-e10079.svg)](https://opensource.org/licenses/Apache)
+[![LanguageCount](https://img.shields.io/github/languages/count/ram-sah/React-Portfolio)](https://github.com/ram-sah/React-Portfolio)
 
 ## Description: 
 ####  Ram Sah : My Portfolio Contains Information about me!
@@ -27,24 +27,23 @@
 ## Questions
             
 <img src="https://github.com/ram-sah.png" alt="avatar" style="border-radius: 30px" width="60" />
+
+[![Author: RAM](https://img.shields.io/badge/Author-RAM-gggddd.svg)](https://opensource.org/Author/RAM)
             
-If you have any questions please contact me at mohan2036@gmail.com
+* If you have any questions please contact me at: rsah1@asu.edu
 ### GitHub Prifile: [ram-sah](https://github.com/ram-sah) 
-### Repository : [portfolio](https://github.com/ram-sah/portfolio)
+### Repository : [React-Portfolio](https://github.com/ram-sah/React-Portfolio)
 ###  Linkedin Link : https://www.linkedin.com/in/ram-sah/
-###  Portfolio Page Link : https://ram-sah.github.io/portfolio/
+###  Portfolio Page Link : https://ram-sah.github.io/React-Portfolio/
 ###  Resume
 ### Download My Resume : [Ram-Sah Resume.PDF](    )
 
 
 ## Technology-Used
-* https://www.w3schools.com/
-* Bootstrap: https://getbootstrap.com/
-* Font Awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
-* Google Font: https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet
-* Current Location: https://freegeoip.app/json/
-* Style.css
-* script.js
+* https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'
+* https://www.google-analytics.com/analytics.js
+* http://statcounter.com
+* Javascript.js
 * ReactJs
 
 ### This project features responsive design using a Bootstrap layout Has responsive layout for:
