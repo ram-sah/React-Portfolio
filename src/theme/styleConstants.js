@@ -1,7 +1,8 @@
 export const ColorScheme = {
   mainText: '#333',
-  primary: '#ff6e70',
-  secondary: '#7d7d7d',
+  primary: '#f10606',
+  secondary: '#f85203c7',
   third: '#5d536b',
-  mainLight: '#efefef',
+  mainLight: '#a19f9f',
+  skill: '#d74906',
 }

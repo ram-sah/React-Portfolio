@@ -1,55 +1,12 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-
+import '../containers/Style.css';
 import { CenteredHeader } from "./App.js";
 import { ColorScheme } from "../theme/styleConstants";
 
-const PortRow = styled.div`
-  margin: 0;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  display: block;  
-`;
-
-const CodeThumbnail = styled.img`
-  width: 70%;
-  display: block;
-  margin: 0 auto;
-`;
-
-const PortAllText = styled.div`
-  width: 90%;
-  margin: 0 auto;
-`;
-
-const PortTitleContainer = styled.div`
-  position: relative;
-  margin: 0 auto;
-  align-items: baseline;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-content: stretch;
-
-  @media (max-width: 600px) {
-    display: inline;
-  }
-`;
-
-const PortTitle = styled.h4`
-  flex: 1;
-  font-family: Gotham, Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-
-  @media (max-width: 600px) {
-    text-align: center;
-  }
-`;
-
 export const PortButton = styled.a`
   padding: 10px 15px;
-  background: 0 0;
+  background: #337ab7;
   border: 2px solid ${ColorScheme.secondary};
   border-radius: 3px;
   margin: 0 5px;
@@ -79,17 +36,6 @@ const PortButtonContainer = styled.div`
   }
 `;
 
-const PortDescription = styled.p`
-  display: block;
-  margin: 15px 0;
-`;
-
-const UsedList = styled.ul`
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-`;
-
 const UsedItem = styled.ul`
   display: inline-block;
   padding: 7px 7px 5px;
@@ -99,8 +45,19 @@ const UsedItem = styled.ul`
   background: ${ColorScheme.secondary};
   border-radius: 3px;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 500;
+  letter-spacing: 0.5px;
+`;
+const Skill = styled.ul`  
+  padding: 5px 7px 0px;
+  margin: 5% 40% 5% 40%;
+  text-align: center;
+  color: black;  
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 800;
   letter-spacing: 0.5px;
 `;
 
@@ -109,10 +66,11 @@ class Code extends Component {
     return (
       <div>
         <div>
-          <CenteredHeader>Skills:</CenteredHeader>
-          <div className="row">
-            <div className="col-lg-4 col-md-4 col-sm-4">
-              <h3>Front-end:</h3>
+          <Skill>Skills:</Skill>
+          <hr className="divider my-4" /><hr />
+          <div className="row skills">
+            <div className="col-lg-3 col-md-3 col-sm-3">
+              <h3><UsedItem>Front-end:</UsedItem></h3>
               <ul>
                 <li>JavaScript (ES6)</li>
                 <li>React</li>
@@ -120,23 +78,39 @@ class Code extends Component {
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>AJAX</li>
-                <li>jQuery</li>                
+                <li>JSON</li>
+                <li>jQuery</li>
+                <li>Bootstrap </li>
               </ul>
             </div>
-            <div className="col-lg-4 col-md-4 col-sm-4">
-              <h3>Back-end:</h3>
+            <div className="col-lg-3 col-md-3 col-sm-3">
+              <h3><UsedItem>Back-end:</UsedItem></h3>
               <ul>
                 <li>Node.js</li>
-                <li>Express</li>
+                <li>Express.js</li>
                 <li>MySQL</li>
+                <li>MongoDB</li>
               </ul>
             </div>
-            <div className="col-lg-4 col-md-4 col-sm-4">
-              <h3>Other:</h3>
+            <div className="col-lg-3 col-md-3 col-sm-3">
+              <h3><UsedItem>Server Side:</UsedItem></h3>
+              <ul>
+                <li>Templating Engines</li>
+                <li>Creating APIs</li>
+                <li>User Authentication</li>
+                <li>ORM (Sequelize)</li>
+                <li>MVC</li>
+              </ul>
+            </div>
+
+            <div className="col-lg-3 col-md-3 col-sm-3">
+              <h3><UsedItem>Other:</UsedItem></h3>
               <ul>
                 <li>Git Hub</li>
                 <li>Webpack</li>
-                <li>JSON</li>
+                <li>Data Structures</li>
+                <li>Algorithms</li>
+                <li>Heroku</li>
               </ul>
             </div>
           </div>
@@ -144,100 +118,224 @@ class Code extends Component {
         <hr />
         <div>
           <CenteredHeader>My Recent Work:</CenteredHeader>
-          <PortRow>
-            <a href="https://damp-brushlands-54954.herokuapp.com" target="_blank">
-              <CodeThumbnail src={require("../assets/burger.gif")} />
-            </a>
-            <PortAllText>
-              <PortTitleContainer>
-                <PortTitle>eat-da-burger</PortTitle>
-                <PortButtonContainer>
-                  <PortButton href="https://damp-brushlands-54954.herokuapp.com" target="_blank">
-                    Demo
-                </PortButton>
-                  <PortButton
-                    href="https://github.com/ram-sah/eat-da-burger"
-                    target="_blank"
-                  >
-                    Code
-                </PortButton>
-                </PortButtonContainer>
-              </PortTitleContainer>
-              <PortDescription>
-                This project is a Command-line Application for Resturant Service!
-              </PortDescription>
+          <hr className="divider my-4" />
+          <div className="portfolio1" id="portfolio">
+            <div className="container-fluid p-0">
+              <div className="row no-gutters">
+                <div className="col-lg-4 col-sm-6">
+                  <a className="portfolio-box" href="https://ram-sah.github.io/Employee-Directory/" target="_blank">
+                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/employee-directory.png")}
+                      alt="Employee-Directory" />
+                    <div className="portfolio-box-caption">
+                      <div className="project-category text-white-50">Demo</div>
+                      <hr className="divider my-4" />
+                      <div className="project-category text-white-50">Employee-Directory:</div><hr />
+                      <div className="project-name">This app helps the user to view their entire employee directory and have quick access to their information!
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://github.com/ram-sah/Employee-Directory" target="_blank"><i
+                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
+                  </a>
+                </div>
 
-              <UsedList>
-                <UsedItem>NodeJs</UsedItem>
-                <UsedItem>Heroku</UsedItem>
-              </UsedList>
-            </PortAllText>
+                <div className="col-lg-4 col-sm-6">
+                  <a className="portfolio-box" href="https://progressive-budget20.herokuapp.com/" target="_blank">
+                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/Budget-Tracker.png")}
+                      alt="Budget-Tracker" />
+                    <div className="portfolio-box-caption">
+                      <div className="project-category text-white-50">Demo</div>
+                      <hr className="divider my-4" />
+                      <div className="project-category text-white-50">Budget-Tracker App:</div><hr />
+                      <div className="project-name">In this application, users will be able to track their withdrawals and deposits with or without an internet connection.!
+                            </div>
+                    </div>
+                  </a>
+                  <a href="https://github.com/ram-sah/Progressive-Budget" target="_blank"><i
+                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
+                  </a>
+                </div>
 
-          </PortRow>
+                <div className="col-lg-4 col-sm-6">
+                  <a className="portfolio-box" href="https://damp-brushlands-54954.herokuapp.com" target="_blank">
+                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/burger.gif")}
+                      alt="Eat-da-Burger" />
+                    <div className="portfolio-box-caption">
+                      <div className="project-category text-white-50">Demo</div>
+                      <hr className="divider my-4" />
+                      <div className="project-category text-white-50">Eat da Burger App App:</div><hr />
+                      <div className="project-name">This is Resturant CLI Application lets users input the names of the burgers they'd like to eat.! </div>
+                    </div>
+                  </a>
+                  <a href="https://github.com/ram-sah/eat-da-burger" target="_blank"><i
+                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
+                  </a>
+                </div>
+              </div> <hr />
+
+              <div className="row no-gutters">
+                <div className="col-lg-4 col-sm-6">
+                  <a className="portfolio-box" href="https://fitness-tracker20.herokuapp.com/?id=5f7258b3eefd640017741c45" target="_blank">
+                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/Fitness-Tracker.png")}
+                      alt="Fitness-Tracker" />
+                    <div className="portfolio-box-caption">
+                      <div className="project-category text-white-50">Demo</div>
+                      <hr className="divider my-4" />
+                      <div className="project-category text-white-50">Fitness-Tracker App:</div><hr />
+                      <div className="project-name">Fitness Tracker is an Application to view, create and track daily workouts!</div>
+                    </div>
+                  </a>
+                  <a href="https://github.com/ram-sah/Fitness-Tracker" target="_blank"><i
+                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
+                  </a>
+                </div>
+
+                <div className="col-lg-4 col-sm-6">
+                  <a className="portfolio-box" href="https://project-2-group1.herokuapp.com" target="_blank">
+                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/project-2.png")}
+                      alt="project-2" />
+                    <div className="portfolio-box-caption">
+                      <div className="project-category text-white-50">Demo</div>
+                      <hr className="divider my-4" />
+                      <div className="project-category text-white-50">Project-2</div><hr />
+                      <div className="project-name">Wine 'A' Lot Management System Help to Visualize Historical Sales Data ! </div>
+                    </div>
+                  </a>
+                  <a href="https://github.com/ram-sah/Project-2" target="_blank"><i
+                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
+                  </a>
+                </div>
+
+                <div className="col-lg-4 col-sm-6">
+                  <a className="portfolio-box" href="https://damp-dawn-43442.herokuapp.com" target="_blank">
+                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/notetaker.jpg")}
+                      alt="notetaker" />
+                    <div className="portfolio-box-caption">
+                      <div className="project-category text-white-50">Demo</div>
+                      <hr className="divider my-4" />
+                      <div className="project-category text-white-50">Budget-Tracker App:</div><hr />
+                      <div className="project-name">In this application, users will be able to track their withdrawals and deposits with or without an internet connection.!
+                            </div>
+                    </div>
+                  </a>
+                  <a href="https://github.com/ram-sah/Note-Taker" target="_blank"><i
+                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
+                  </a>
+                </div>
+              </div> <hr />
+
+              <div className="row no-gutters">
+                <div className="col-lg-4 col-sm-6">
+                  <a className="portfolio-box" href="https://ram-sah.github.io/Weather-Dashboard" target="_blank">
+                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/weather.jpg")}
+                      alt="weather" />
+                    <div className="portfolio-box-caption">
+                      <div className="project-category text-white-50">Demo</div>
+                      <hr className="divider my-4" />
+                      <div className="project-category text-white-50">Weather-Dashboard:</div><hr />
+                      <div className="project-name">My Weather-Dashboard Web Page to find <br />5-Days
+                        Weather Forcast of any City !
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://github.com/ram-sah/Weather-Dashboard" target="_blank"><i
+                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
+                  </a>
+                </div>
+
+                <div className="col-lg-4 col-sm-6">
+                  <a className="portfolio-box" href="https://github.com/ram-sah/Employee-Summary#Demo" target="_blank">
+                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/Employee-Summary.jpg")}
+                      alt="Employee-Summary" />
+                    <div className="portfolio-box-caption">
+                      <div className="project-category text-white-50">Demo</div>
+                      <hr className="divider my-4" />
+                      <div className="project-category text-white-50">Employee Summary:</div><hr />
+                      <div className="project-name">Command-line Application to Generates Team Profile !
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://github.com/ram-sah/Employee-Summary" target="_blank"><i
+                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
+                  </a>
+                </div>
+
+                <div className="col-lg-4 col-sm-6">
+                  <a className="portfolio-box" href="https://ram-sah.github.io/Employee-Tracker/" target="_blank">
+                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/Employee-Tracker.jpg")}
+                      alt="Employee-Tracker" />
+                    <div className="portfolio-box-caption">
+                      <div className="project-category text-white-50">Demo</div>
+                      <hr className="divider my-4" />
+                      <div className="project-category text-white-50">Employee Tracker:</div><hr />
+                      <div className="project-name">This Application helps to manages a company's employees!
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://github.com/ram-sah/Employee-Tracker" target="_blank"><i
+                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
+                  </a>
+                </div>
+              </div> <hr />
+
+              <div className="row no-gutters">
+                <div className="col-lg-4 col-sm-6">
+                  <a className="portfolio-box" href="https://ram-sah.github.io/Day-Planner" target="_blank">
+                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/scheduler.jpg")}
+                      alt="scheduler" />
+                    <div className="portfolio-box-caption">
+                      <div className="project-category text-white-50">Demo</div>
+                      <hr className="divider my-4" />
+                      <div className="project-category text-white-50">Day Planner:</div><hr />
+                      <div className="project-name">This Application helps to keep track Day Planning the past, present, or future!
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://github.com/ram-sah/Day-Planner" target="_blank"><i
+                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
+                  </a>
+                </div>
+
+                <div className="col-lg-4 col-sm-6">
+                  <a className="portfolio-box" href="https://ram-sah.github.io/4.Quiz-Code" target="_blank">
+                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/code-quiz.png")}
+                      alt="code-quiz" />
+                    <div className="portfolio-box-caption">
+                      <div className="project-category text-white-50">Demo</div>
+                      <hr className="divider my-4" />
+                      <div className="project-category text-white-50">Code Quiz Taker:</div><hr />
+                      <div className="project-name">Code Quiz Taker Web Page to test Quiz knowledge on time frame !
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://github.com/ram-sah/4.Quiz-Code" target="_blank"><i
+                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
+                  </a>
+                </div>
+
+                <div className="col-lg-4 col-sm-6">
+                  <a className="portfolio-box" href="https://ram-sah.github.io/3.Password-generator" target="_blank">
+                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/password-generator.png")}
+                      alt="password-generator" />
+                    <div className="portfolio-box-caption">
+                      <div className="project-category text-white-50">Demo</div>
+                      <hr className="divider my-4" />
+                      <div className="project-category text-white-50">Password Generator:</div><hr />
+                      <div className="project-name">Password Generator Web Page help to generaes passwords on the basis of prompt questions !
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://github.com/ram-sah/3.Password-generator" target="_blank"><i
+                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
           <hr />
-          <PortRow>
-            <a href="https://progressive-budget20.herokuapp.com/" target="_blank">
-              <CodeThumbnail src={require("../assets/Budget-Tracker.png")} />
-            </a>
-            <PortAllText>
-              <PortTitleContainer>
-                <PortTitle>Progressive Budget</PortTitle>
-                <PortButtonContainer>
-                  <PortButton href="https://progressive-budget20.herokuapp.com" target="_blank">
-                    Demo
-                </PortButton>
-                  <PortButton
-                    href="https://github.com/ram-sah/Progressive-Budget"
-                    target="_blank"
-                  >
-                    Code
-                </PortButton>
-                </PortButtonContainer>
-              </PortTitleContainer>
-              <PortDescription>
-                This project, users will be able to track their withdrawals and deposits with or without an internet connection.!
-              </PortDescription>
-
-              <UsedList>
-                <UsedItem>NodeJs</UsedItem>
-                <UsedItem>Heroku</UsedItem>
-                <UsedItem>mongoDB</UsedItem>
-              </UsedList>
-            </PortAllText>
-            </PortRow>            
-            <hr />
-            <PortRow>
-            <a href="https://fitness-tracker20.herokuapp.com/?id=5f7258b3eefd640017741c45" target="_blank">
-              <CodeThumbnail src={require("../assets/Fitness-Tracker.png")} />
-            </a>
-            <PortAllText>
-              <PortTitleContainer>
-                <PortTitle>Fitness-Tracker</PortTitle>
-                <PortButtonContainer>
-                  <PortButton href="https://fitness-tracker20.herokuapp.com/?id=5f7258b3eefd640017741c45" target="_blank">
-                    Demo
-                </PortButton>
-                  <PortButton
-                    href="https://github.com/ram-sah/Fitness-Tracker"
-                    target="_blank"
-                  >
-                    Code
-                </PortButton>
-                </PortButtonContainer>
-              </PortTitleContainer>
-              <PortDescription>
-                This Fitness Tracker is an Application to view, create and track daily workouts!
-              </PortDescription>
-
-              <UsedList>
-                <UsedItem>NodeJs</UsedItem>
-                <UsedItem>Heroku</UsedItem>
-                <UsedItem>mongoDB</UsedItem>
-              </UsedList>
-            </PortAllText>
-          </PortRow>
-          <hr />
-
+          <PortButtonContainer>
+            <PortButton href="#">HOME ▲</PortButton>
+          </PortButtonContainer>
         </div>
       </div>
     );

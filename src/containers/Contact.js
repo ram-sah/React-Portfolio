@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { CenteredHeader } from './App.js'
-
+import "./Style.css";
 const FormDiv = styled.div`
   margin: 0 auto;
   width: 50%;
@@ -20,18 +20,13 @@ const CommentInput = styled.textarea`
   height: 6em;
 `
 
-const EmailMe = styled.p`
-  text-align: center;
-  padding: 4%;
-`
-
 class Contact extends Component {
 
   render() {
     return (
       <div>
-        <CenteredHeader>Get in touch with me!</CenteredHeader>
-
+        <CenteredHeader className="letsBold">Let's Get in Touch with Me!</CenteredHeader>
+        <hr className="divider my-4" />
         <FormDiv>
           <form action="https://formspree.io/rsah1@asu.edu" method="POST" id="contactform">
             <div>
@@ -49,7 +44,23 @@ class Contact extends Component {
             <button type="submit">Submit</button>
           </form>
         </FormDiv>
-        <EmailMe>Or, just email me directly at <a href="mailto:rsah1@asu.edu" target="_blank"><strong>rsah1@asu.edu</strong></a>.</EmailMe>      
+
+        <section id="contact" className="section page-section green">
+          <CenteredHeader>
+            Need to reach out? Feel free to call or email me.
+          </CenteredHeader>
+
+          <div className="row">
+            <div className="phoneMargin col-lg-6 text-center mb-5 mb-lg-0">
+              <i className="phoneSize">{"\uD83D\uDCF1"}</i>
+              <div>  +1 (484) 639-9591</div>
+            </div>
+            <div className="col-lg-4 mr-auto text-center">
+              <i className="hi mailSize fa fa-envelope fa-fw fa-2x"> </i>
+              <div className="hi"> <a href="mailto:rsah1@asu.edu">rsah1@asu.edu</a></div>
+            </div>
+          </div>
+        </section>
       </div>
     );
   }

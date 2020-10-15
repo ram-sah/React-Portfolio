@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-
 import Header from './Header.js'
 import Footer from './Footer.js'
-
-import background from '../assets/background.jpg'
 
 export const ColorScheme = {
   primary: 'red',
@@ -22,21 +19,18 @@ const AppDiv = styled.div`
 
 export const CenteredHeader = styled.h3`
   text-align: center;
-  margin-bottom: 1.25em;
+  margin-top: 3em;
 `
-
-
 const ContainerDiv = styled.div`
-  margin: 1% 17% 3% 17%;
+  margin: 1% 15% 3% 15%;
   flex: 1;
   font-family: 'Open Sans', sans-serif; 
-`
-  
+`  
 class App extends Component {
   render() {
     return (
 
-<div  styles={{ backgroundImage:`url(${background})` }}>
+<div>
       <AppDiv>
         <Header />
         <ContainerDiv>
@@ -44,10 +38,12 @@ class App extends Component {
         </ContainerDiv>
         <Footer />
       </AppDiv>
-
       </div>
     );
   }
 }
 
 export default App;
+
+{/* <div  style={{ backgroundImage:`url(${background})` }}></div>
+<section className="card mb-3" style={ {width: "1000px" }}></section> */}
