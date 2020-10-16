@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
 import { CenteredHeader } from './App.js'
-
+import '../theme/globalStyle'
 class Home extends Component {
   render() {
     return (
-      // <section style={ {width: "1000px" }}></section>
-      <div > 
+      // <section style={ {width: "1000px" }}></section>     
+      <div className='card'> 
         <CenteredHeader> <strong> WELCOME !</strong> </CenteredHeader>
         <hr className="divider my-4" />
         <CenteredHeader>Hello ! I'm Ram Sah</CenteredHeader>
         <div className="home">
-          Thank you for visiting my portfolio. I'm a Full Stack Web Developer with a passion for building awesome Design with Code.
-          I enjoy Coding. I have completed my Full Stack Web Developer Course from Penn LPS Boot Camp
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thank you for visiting my portfolio. I'm a Full Stack Web Developer with a passion for building awesome Design with Code.
+        I enjoy Coding. I have completed my Full Stack Web Developer Course from Penn LPS Boot Camp
         Philadelphia, <a href="https://www.upenn.edu/" target="_blank">University of Pennsylvania. </a>        
         My journey in <strong>Coding </strong>
         started on May-2020. Since then, I've been doing well in my class with <strong>A+</strong> rating.          
@@ -19,7 +19,7 @@ class Home extends Component {
         GitHub, Nodejs, Node Express Handlebars, MySql, MongoDB, Redux, ReactJs, Heroku.
         I have completed Masters Degree from <a href="http://www.tribhuvan-university.edu.np/" target="_blank">Tribhuvan University </a>, Nepal in 2008.
         </div>
-      </div>      
+      </div>          
     );
   }
 }

@@ -24,7 +24,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <div>
+      <div className='contactPg'>
         <CenteredHeader className="letsBold">Let's Get in Touch with Me!</CenteredHeader>
         <hr className="divider my-4" />
         <FormDiv>

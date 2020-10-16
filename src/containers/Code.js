@@ -65,7 +65,7 @@ class Code extends Component {
   render() {
     return (
       <div>
-        <div>
+        <div className='portfolioPg'>
           <Skill>Skills:</Skill>
           <hr className="divider my-4" /><hr />
           <div className="row skills">

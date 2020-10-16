@@ -8,6 +8,7 @@ const ProfileImage = styled.img`
   width: 10em;
   height: 10em;
   border-radius: 50%;
+  margin-top: -40px;
 `;
 
 const ProfileTitle = styled.h1`
@@ -35,7 +36,8 @@ class Header extends Component {
   render() {
     return (
       <figure className="aboutMe">
-      <HeaderDiv><Nav />
+        <Nav />
+      <HeaderDiv>
         <Link to="/">
           <ProfileImage src={require('../assets/ram.jpg')} alt='Ram Sah' />
           <ProfileTitle>FULL STACK WEB DEVELOPER</ProfileTitle>   
