@@ -14,12 +14,12 @@ const AppDiv = styled.div`
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font-size: 1.15em;
+  font-size: 1.5em;
 `;
 
-export const CenteredHeader = styled.h3`
+export const CenteredHeader = styled.h2`
   text-align: center;
-  margin-top: 3em;
+  margin-top: 2em;
 `
 const ContainerDiv = styled.div`
   margin: 1% 15% 3% 15%;

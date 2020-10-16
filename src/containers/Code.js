@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import '../containers/Style.css';
-import { CenteredHeader } from "./App.js";
 import { ColorScheme } from "../theme/styleConstants";
+import { CenteredHeader } from "./App.js";
 
 export const PortButton = styled.a`
   padding: 10px 15px;
@@ -45,20 +45,20 @@ const UsedItem = styled.ul`
   background: ${ColorScheme.secondary};
   border-radius: 3px;
   text-transform: uppercase;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 19px;
+  font-weight: 800;
   letter-spacing: 0.5px;
 `;
 const Skill = styled.ul`  
   padding: 5px 7px 0px;
-  margin: 5% 40% 5% 40%;
+  margin: 5% 30% 1% 30%;
   text-align: center;
   color: black;  
   border-radius: 3px;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 800;
-  letter-spacing: 0.5px;
+  letter-spacing: 1.5px;
 `;
 
 class Code extends Component {
@@ -117,7 +117,7 @@ class Code extends Component {
         </div>
         <hr />
         <div>
-          <CenteredHeader>My Recent Work:</CenteredHeader>
+          <Skill>My Recent Work:</Skill>
           <hr className="divider my-4" />
           <div className="portfolio1" id="portfolio">
             <div className="container-fluid p-0">

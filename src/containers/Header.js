@@ -30,7 +30,7 @@ const NavLink = styled(Link)`
   display: inline-flex;
   margin: 5px 10px;
   color: purple;
-  font-size: 26px;
+  font-size: 30px;
 `
 class Header extends Component {
   render() {
