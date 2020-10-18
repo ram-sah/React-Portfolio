@@ -62,17 +62,17 @@ injectGlobal`
   .card {   
     background: #dfb8b8;
     padding:0.2% 25% 8% 25%;
-    margin: -1.3% -22% -4.19% -22%
+    margin: -1.3% -21.4% -4.19% -22%
   }
   .contactPg {   
     background: #e7d67c;
     padding:0.2% 25% 8% 25%;
-    margin: -1.3% -22% -4.19% -22%
+    margin: -1.3% -21.4% -4.19% -22%
   }
   .portfolioPg {   
     background: #0000ff3b;
     padding:0.2% 25% 8% 25%;
-    margin: -1.3% -22% -4.19% -22%
+    margin: -1.3% -21.4% -4.19% -22%
   }
 }
 `;

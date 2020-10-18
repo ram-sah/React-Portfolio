@@ -6,21 +6,16 @@ import { CenteredHeader } from "./App.js";
 
 export const PortButton = styled.a`
   padding: 10px 15px;
-  background: #337ab7;
   border: 2px solid ${ColorScheme.secondary};
   border-radius: 3px;
-  margin: 0 5px;
-  color: ${ColorScheme.secondary};
   font-family: Gotham, Helvetica, Arial, sans-serif;
-  font-weight: 500;
   text-transform: uppercase;
   transition: all 0.3s ease;
   &:hover {
-    background: ${ColorScheme.primary};
+    background: ${ColorScheme.secondary1};
     color: #fff;
     border-color: ${ColorScheme.primary};
   }
-
   @media (max-width: 600px) {
     padding: 5px 7px;
   }
@@ -42,8 +37,10 @@ const UsedItem = styled.ul`
   margin-right: 5px;
   margin-bottom: 10px;
   color: #fff;
-  background: ${ColorScheme.secondary};
+  background: ${ColorScheme.secondary1};
+  text-align: center;
   border-radius: 3px;
+  width: 8em;
   text-transform: uppercase;
   font-size: 19px;
   font-weight: 800;
@@ -147,7 +144,7 @@ class Code extends Component {
                       <div className="project-category text-white-50">Demo</div>
                       <hr className="divider my-4" />
                       <div className="project-category text-white-50">Budget-Tracker App:</div><hr />
-                      <div className="project-name">In this application, users will be able to track their withdrawals and deposits with or without an internet connection.!
+                      <div className="project-name">In this application, users will be able to track their withdrawals and deposits with or without an internet connection!
                             </div>
                     </div>
                   </a>
@@ -164,7 +161,7 @@ class Code extends Component {
                       <div className="project-category text-white-50">Demo</div>
                       <hr className="divider my-4" />
                       <div className="project-category text-white-50">Eat da Burger App App:</div><hr />
-                      <div className="project-name">This is Resturant CLI Application lets users input the names of the burgers they'd like to eat.! </div>
+                      <div className="project-name">This is Resturant CLI Application lets users input the names of the burgers they'd like to eat! </div>
                     </div>
                   </a>
                   <a href="https://github.com/ram-sah/eat-da-burger" target="_blank"><i
@@ -213,8 +210,8 @@ class Code extends Component {
                     <div className="portfolio-box-caption">
                       <div className="project-category text-white-50">Demo</div>
                       <hr className="divider my-4" />
-                      <div className="project-category text-white-50">Budget-Tracker App:</div><hr />
-                      <div className="project-name">In this application, users will be able to track their withdrawals and deposits with or without an internet connection.!
+                      <div className="project-category text-white-50">Note-Taker App:</div><hr />
+                      <div className="project-name">This Application uses to organize your thoughts and keep track of tasks.
                             </div>
                     </div>
                   </a>

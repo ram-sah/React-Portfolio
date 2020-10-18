@@ -25,7 +25,7 @@ class Contact extends Component {
   render() {
     return (
       <div className='contactPg'>
-        <CenteredHeader className="letsBold">Let's Get in Touch with Me!</CenteredHeader>
+        <CenteredHeader className="letsBold">Let's Get in Touch!</CenteredHeader>
         <hr className="divider my-4" />
         <FormDiv>
           <form action="https://formspree.io/rsah1@asu.edu" method="POST" id="contactform">

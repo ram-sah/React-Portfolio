@@ -5,8 +5,8 @@ import Pdf from '../assets/RAM-resume.pdf';
 import Nav from './Nav.js'
 
 const ProfileImage = styled.img`
-  width: 10em;
-  height: 10em;
+  width: 6em;
+  height: 6.5em;
   border-radius: 50%;
   margin-top: -40px;
 `;
