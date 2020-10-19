@@ -55,7 +55,7 @@ const Skill = styled.ul`
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 800;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.5px;      
 `;
 
 class Code extends Component {
@@ -66,7 +66,7 @@ class Code extends Component {
           <Skill>Skills:</Skill>
           <hr className="divider my-4" /><hr />
           <div className="row skills">
-            <div className="col-lg-3 col-md-3 col-sm-3">
+            <div className="col-lg-3 col-md-6 col-sm-6">
               <h3><UsedItem>Front-end:</UsedItem></h3>
               <ul>
                 <li>JavaScript (ES6)</li>
@@ -80,7 +80,7 @@ class Code extends Component {
                 <li>Bootstrap </li>
               </ul>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-3">
+            <div className="col-lg-3 col-md-6 col-sm-6">
               <h3><UsedItem>Back-end:</UsedItem></h3>
               <ul>
                 <li>Node.js</li>
@@ -89,7 +89,7 @@ class Code extends Component {
                 <li>MongoDB</li>
               </ul>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-3">
+            <div className="col-lg-3 col-md-6 col-sm-6">
               <h3><UsedItem>Server Side:</UsedItem></h3>
               <ul>
                 <li>Templating Engines</li>
@@ -100,7 +100,7 @@ class Code extends Component {
               </ul>
             </div>
 
-            <div className="col-lg-3 col-md-3 col-sm-3">
+            <div className="col-lg-3 col-md-6 col-sm-6">
               <h3><UsedItem>Other:</UsedItem></h3>
               <ul>
                 <li>Git Hub</li>
@@ -119,7 +119,7 @@ class Code extends Component {
           <div className="portfolio1" id="portfolio">
             <div className="container-fluid p-0">
               <div className="row no-gutters">
-                <div className="col-lg-4 col-sm-6">
+                <div className="col-lg-4 col-sm-12">
                   <a className="portfolio-box" href="https://ram-sah.github.io/Employee-Directory/" target="_blank">
                     <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/employee-directory.png")}
                       alt="Employee-Directory" />
@@ -136,7 +136,7 @@ class Code extends Component {
                   </a>
                 </div>
 
-                <div className="col-lg-4 col-sm-6">
+                <div className="col-lg-4 col-sm-12">
                   <a className="portfolio-box" href="https://progressive-budget20.herokuapp.com/" target="_blank">
                     <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/Budget-Tracker.png")}
                       alt="Budget-Tracker" />
@@ -153,7 +153,7 @@ class Code extends Component {
                   </a>
                 </div>
 
-                <div className="col-lg-4 col-sm-6">
+                <div className="col-lg-4 col-sm-12">
                   <a className="portfolio-box" href="https://damp-brushlands-54954.herokuapp.com" target="_blank">
                     <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/burger.gif")}
                       alt="Eat-da-Burger" />
@@ -171,7 +171,7 @@ class Code extends Component {
               </div> <hr />
 
               <div className="row no-gutters">
-                <div className="col-lg-4 col-sm-6">
+                <div className="col-lg-4 col-sm-12">
                   <a className="portfolio-box" href="https://fitness-tracker20.herokuapp.com/?id=5f7258b3eefd640017741c45" target="_blank">
                     <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/Fitness-Tracker.png")}
                       alt="Fitness-Tracker" />
@@ -187,7 +187,7 @@ class Code extends Component {
                   </a>
                 </div>
 
-                <div className="col-lg-4 col-sm-6">
+                <div className="col-lg-4 col-sm-12">
                   <a className="portfolio-box" href="https://project-2-group1.herokuapp.com" target="_blank">
                     <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/project-2.png")}
                       alt="project-2" />
@@ -203,7 +203,7 @@ class Code extends Component {
                   </a>
                 </div>
 
-                <div className="col-lg-4 col-sm-6">
+                <div className="col-lg-4 col-sm-12">
                   <a className="portfolio-box" href="https://damp-dawn-43442.herokuapp.com" target="_blank">
                     <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/notetaker.jpg")}
                       alt="notetaker" />
@@ -222,7 +222,7 @@ class Code extends Component {
               </div> <hr />
 
               <div className="row no-gutters">
-                <div className="col-lg-4 col-sm-6">
+                <div className="col-lg-4 col-sm-12">
                   <a className="portfolio-box" href="https://ram-sah.github.io/Weather-Dashboard" target="_blank">
                     <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/weather.jpg")}
                       alt="weather" />
@@ -240,7 +240,7 @@ class Code extends Component {
                   </a>
                 </div>
 
-                <div className="col-lg-4 col-sm-6">
+                <div className="col-lg-4 col-sm-12">
                   <a className="portfolio-box" href="https://github.com/ram-sah/Employee-Summary#Demo" target="_blank">
                     <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/Employee-Summary.jpg")}
                       alt="Employee-Summary" />
@@ -257,7 +257,7 @@ class Code extends Component {
                   </a>
                 </div>
 
-                <div className="col-lg-4 col-sm-6">
+                <div className="col-lg-4 col-sm-12">
                   <a className="portfolio-box" href="https://ram-sah.github.io/Employee-Tracker/" target="_blank">
                     <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/Employee-Tracker.jpg")}
                       alt="Employee-Tracker" />
@@ -276,7 +276,7 @@ class Code extends Component {
               </div> <hr />
 
               <div className="row no-gutters">
-                <div className="col-lg-4 col-sm-6">
+                <div className="col-lg-4 col-sm-12">
                   <a className="portfolio-box" href="https://ram-sah.github.io/Day-Planner" target="_blank">
                     <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/scheduler.jpg")}
                       alt="scheduler" />
@@ -293,7 +293,7 @@ class Code extends Component {
                   </a>
                 </div>
 
-                <div className="col-lg-4 col-sm-6">
+                <div className="col-lg-4 col-sm-12">
                   <a className="portfolio-box" href="https://ram-sah.github.io/4.Quiz-Code" target="_blank">
                     <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/code-quiz.png")}
                       alt="code-quiz" />
@@ -310,7 +310,7 @@ class Code extends Component {
                   </a>
                 </div>
 
-                <div className="col-lg-4 col-sm-6">
+                <div className="col-lg-4 col-sm-12">
                   <a className="portfolio-box" href="https://ram-sah.github.io/3.Password-generator" target="_blank">
                     <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/password-generator.png")}
                       alt="password-generator" />

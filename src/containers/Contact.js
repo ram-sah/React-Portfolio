@@ -5,6 +5,10 @@ import "./Style.css";
 const FormDiv = styled.div`
   margin: 0 auto;
   width: 50%;
+  @media (max-width: 1000px) {
+    padding: 0px;
+    width: 100%
+  }
 `
 
 const FormLabel = styled.label`
