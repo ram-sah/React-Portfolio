@@ -37,7 +37,7 @@
 ###  Linkedin Link : https://www.linkedin.com/in/ram-sah/
 ###  Portfolio Page Link : https://ram-sah.github.io/React-Portfolio/
 ###  Resume
-### Download My Resume : [Ram-Sah Resume.PDF](https://drive.google.com/file/d/1pWzMnH7-4U-j0c8b3gLQhVGw0u5HZltG/view?usp=sharing)
+### Download My Resume : [Ram-Sah Resume.PDF](https://drive.google.com/file/d/1bpdrFOSM3owwD3OuZ-oxOTq8jYmnGaR7/view?usp=sharing)
 
 
 ## Technology-Used
