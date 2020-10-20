@@ -1,6 +1,7 @@
 # React-Portfolio
 [![License: Apache](https://img.shields.io/badge/License-Apache2.0-e10079.svg)](https://opensource.org/licenses/Apache)
 [![LanguageCount](https://img.shields.io/github/languages/count/ram-sah/React-Portfolio)](https://github.com/ram-sah/React-Portfolio)
+[![Repo](https://img.shields.io/github/repo-size/ram-sah/React-Portfolio?logo=gitHub)](https://github.com/ram-sah/React-Portfolio)
 
 ## Description: https://ram-sah.herokuapp.com
 ####  Ram Sah : My Portfolio Contains Information about me!

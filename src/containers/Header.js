@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import styled from 'styled-components';
 import Pdf from '../assets/RAM-resume.pdf';
 import Nav from './Nav.js'
+import Animate from '../Animate.js'
 
 const ProfileImage = styled.img`
   width: 6em;
@@ -12,7 +13,7 @@ const ProfileImage = styled.img`
 `;
 
 const ProfileTitle = styled.h1`
-  color: #1f10de;
+  color: white;
   font-family: cursive;
   font-weight: bolder;
   padding-top: 2%; 
@@ -39,9 +40,9 @@ class Header extends Component {
         <Nav />
       <HeaderDiv>
         <Link to="/">
-          <ProfileImage src={require('../assets/ram.jpg')} alt='Ram Sah' />
-          <ProfileTitle>FULL STACK WEB DEVELOPER</ProfileTitle>   
-          <hr className="divider my-4" />      
+          <ProfileImage src={require('../assets/ram.jpg')} alt='Ram Sah' />  
+          <ProfileTitle><Animate /></ProfileTitle>   
+          <hr className="divider my-4" /> 
         </Link>
         <div>
           <NavLink to='/'>ABOUT</NavLink>

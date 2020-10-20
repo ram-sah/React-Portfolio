@@ -25,19 +25,19 @@ const ContainerDiv = styled.div`
   margin: 1% 15% 3% 15%;
   flex: 1;
   font-family: 'Open Sans', sans-serif; 
-`  
+`
 class App extends Component {
   render() {
     return (
 
-<div>
-      <AppDiv>
-        <Header />
-        <ContainerDiv>
-          {this.props.children}
-        </ContainerDiv>
-        <Footer />
-      </AppDiv>
+      <div>
+        <AppDiv>
+          <Header />
+          <ContainerDiv>
+            {this.props.children}
+          </ContainerDiv>
+          <Footer />
+        </AppDiv>
       </div>
     );
   }
