@@ -25,6 +25,10 @@ const ContainerDiv = styled.div`
   margin: 1% 15% 3% 15%;
   flex: 1;
   font-family: 'Open Sans', sans-serif; 
+  @media (max-width: 600px) {
+    margin: 0%;
+    width: 100%
+  }
 `
 class App extends Component {
   render() {

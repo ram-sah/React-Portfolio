@@ -10,9 +10,11 @@ function Animate() {
           loop={Infinity}
           wrapper='b'
           steps={[
-            'FULL STACK WEB DEVELOPER',
-            3500,
-            'WEB DESIGNER',
+            'FULL STACK DEVELOPER',
+            4000,
+            '"SOFTWARE ENGINEER"',
+            4500,
+            '"WEB DESIGNER"',
             2000
           ]}
         />

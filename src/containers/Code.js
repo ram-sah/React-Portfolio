@@ -70,14 +70,14 @@ class Code extends Component {
               <h3><UsedItem>Front-end:</UsedItem></h3>
               <ul>
                 <li>JavaScript (ES6)</li>
-                <li>React</li>
+                <li>ReactJs</li>
                 <li>Redux</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
                 <li>AJAX</li>
                 <li>JSON</li>
-                <li>jQuery</li>
-                <li>Bootstrap </li>
+                <li>jQuery</li>     
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Bootstrap </li>                           
               </ul>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6">
@@ -94,7 +94,7 @@ class Code extends Component {
               <ul>
                 <li>Templating Engines</li>
                 <li>Creating APIs</li>
-                <li>User Authentication</li>
+                <li>UserAuthentication</li>
                 <li>ORM (Sequelize)</li>
                 <li>MVC</li>
               </ul>

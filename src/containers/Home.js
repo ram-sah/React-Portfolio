@@ -8,13 +8,11 @@ class Home extends Component {
       <div className='card'> 
         <CenteredHeader> <strong> WELCOME !</strong> </CenteredHeader>
         <hr className="divider my-4" />
-        <CenteredHeader>Hello ! I'm Ram Sah. I live with Creativity.</CenteredHeader>
+        <CenteredHeader>Hello, I'm Ram !<br/> I live with Creativity.</CenteredHeader>
         <div className="home">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thank you for visiting my portfolio. I'm a Full Stack Web Developer with a passion for building awesome Design with Code.
-        I enjoy Coding. I have completed my Full Stack Web Developer Course from Penn LPS Boot Camp
-        Philadelphia, <a href="https://www.upenn.edu/" target="_blank">University of Pennsylvania. </a>        
-        My journey in <strong>Coding </strong>
-        started on May-2020. Since then, I've been doing well in my class with <strong>A+</strong> rating.          
+        I enjoy Coding. I have completed my Full Stack Web Developer Course in 2020 with "Grade: A+" from Penn LPS Boot Camp
+        Philadelphia, <a href="https://www.upenn.edu/" target="_blank">University of Pennsylvania. </a>
         I have completed HTML5, CSS, JavaScript, JQuery, Ajax, APIs, Bootstrap,
         GitHub, Nodejs, Node Express Handlebars, MySql, MongoDB, Redux, ReactJs, Heroku.
         I have completed Masters Degree from <a href="http://www.tribhuvan-university.edu.np/" target="_blank">Tribhuvan University </a>, Nepal in 2008.

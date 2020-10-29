@@ -17,8 +17,16 @@
   min-height: 1vh;
   font-size: 50px;
   text-align: center; 
+  
 } 
-
+@media (max-width: 600px) {
+ 
+  .App-header {    
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;     
+  } 
+}
 .App-link {
   color: #61dafb;
 }
