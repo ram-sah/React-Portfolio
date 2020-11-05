@@ -31,7 +31,7 @@ const NavLink = styled(Link)`
   display: inline-flex;
   margin: 5px 10px;
   color: purple;
-  font-size: 40px;
+  font-size: 38px;
   @media (max-width: 600px) {   
     font-size: 30px;
     }

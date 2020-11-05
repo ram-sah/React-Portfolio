@@ -5,8 +5,9 @@ import { ColorScheme } from "../theme/styleConstants";
 import { CenteredHeader } from "./App.js";
 
 export const PortButton = styled.a`
-  padding: 10px 15px;
-  margin-left: 10%;
+  padding: 10px;
+  font-size: 15px;
+  margin-left: 1%;
   border: 2px solid ${ColorScheme.secondary};
   border-radius: 3px;
   font-family: Gotham, Helvetica, Arial, sans-serif;
@@ -17,9 +18,9 @@ export const PortButton = styled.a`
     color: #fff;
     border-color: ${ColorScheme.primary};
   }
-  @media (max-width: 730px) {
-    padding: 0;
-    margin-left: 4%;
+  @media (max-width: 340px) {
+    margin-left: 1%;
+    padding: 5px;
   }
 `;
 
@@ -34,7 +35,7 @@ const PortButtonContainer = styled.div`
 
 const UsedItem = styled.ul`
   display: inline-block;
-  padding: 8px 8px 8px;
+  padding: 7px 7px 7px;
   margin-right: 5px;
   margin-bottom: 10px;
   color: #fff;
@@ -43,7 +44,7 @@ const UsedItem = styled.ul`
   border-radius: 3px;
   width: 8em;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 800;
   letter-spacing: 0.5px;
   @media (max-width: 600px) {   
@@ -57,7 +58,7 @@ const Skill = styled.ul`
   color: black;  
   border-radius: 3px;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 800;
   letter-spacing: 1.5px; 
 
@@ -112,7 +113,6 @@ class Code extends Component {
                 <li>MVC</li>
               </ul>
             </div>
-
             <div className="col-lg-3 col-md-6 col-sm-6">
               <h3><UsedItem>Other:</UsedItem></h3>
               <ul>
@@ -124,8 +124,7 @@ class Code extends Component {
               </ul>
             </div>
           </div>
-        </div>        
-        {/* <div> */}
+        </div>
         <Skill>My Project Work:</Skill>
         <hr className="divider my-4" />
         <div className="portfolio1" id="portfolio">
@@ -138,34 +137,30 @@ class Code extends Component {
                   <div className="portfolio-box-caption">
                     <div className="project-category text-white-50">&#9758; Demo: Weather-Dashboard</div>
                     <hr className="divider my-4" />
-                    <div className="project-name">5-Day Weather Dashboard to see the weather of any City. 
-                    This App helps to save data on licalStorage and revisit your previous searches as easy to click buttons.                     
-                    <hr />                    
-                    <p className="project-name">Technology Used:</p>
+                    <div className="project-name">5-Day Weather Dashboard to see the weather of any City.
+                    This App helps to save data on licalStorage and revisit your previous searches as easy to click buttons.
+                    <hr />
+                      <p className="project-tech">Technology Used:</p>
                       <div className="row">
                         <div className="column">
-                          <div className="card0">                          
                           <ul className="card-text1">
                             <li>JavaScript</li>
                             <li>CSS3</li>
-                            <li>HTML</li>      
-                            <li>Ajax</li> 
-                            <li>Bootstrap</li>                      
-                            </ul> 
-                          </div>
+                            <li>HTML</li>
+                            <li>Ajax</li>
+                            <li>Bootstrap</li>
+                          </ul>
                         </div>
                         <div className="column">
-                          <div className="card0">                          
-                          <ul className="card-text1">                        
+                          <ul className="card-text1">
                             <li>Weather Map API</li>
                             <li>JQuery</li>
                             <li>Momentjs</li>
-                            <li>Font Awesome</li>   
-                            <li>localStorage</li>                          
-                            </ul> 
-                          </div>
+                            <li>Font Awesome</li>
+                            <li>localStorage</li>
+                          </ul>
                         </div>
-                      </div>              
+                      </div>
                     </div>
                   </div>
                 </a>
@@ -181,35 +176,31 @@ class Code extends Component {
                   <div className="portfolio-box-caption">
                     <div className="project-category text-white-50">&#9758; Demo: Eat da Burger App</div>
                     <hr className="divider my-4" />
-                    
-                    <div className="project-name">It is a restaurant App that lets users input the names of the burgers they'd like the eat. 
+
+                    <div className="project-name">It is a restaurant App that lets users input the names of the burgers they'd like the eat.
                     it will generate under the to be eaten heading. User can Devour that burger by clicking on it.</div>
-                    <hr /> 
-                    <p className="project-name">Technology Used:</p>
-                      <div className="row">
-                        <div className="column">
-                          <div className="card0">                          
-                          <ul className="card-text1">
-                            <li>JavaScript</li>
-                            <li>MySQL</li>                            
-                            <li>express-handlebars</li>      
-                            <li>express</li> 
-                            <li>Bootstrap</li>                      
-                            </ul> 
-                          </div>
-                        </div>
-                        <div className="column">
-                          <div className="card0">                          
-                          <ul className="card-text1">   
-                            <li>JQuery</li>
-                            <li>CSS3</li>
-                            <li>Font Awesome</li>   
-                            <li>JawsDB</li>    
-                            <li>Heroku</li>                      
-                            </ul> 
-                          </div>
-                        </div>
-                      </div> 
+                    <hr />
+                    <p className="project-tech">Technology Used:</p>
+                    <div className="row">
+                      <div className="column">
+                        <ul className="card-text1">
+                          <li>JavaScript</li>
+                          <li>MySQL</li>
+                          <li>express-handlebars</li>
+                          <li>Font Awesome</li>
+                          <li>express</li>
+                        </ul>
+                      </div>
+                      <div className="column">
+                        <ul className="card-text1">
+                          <li>JQuery</li>
+                          <li>CSS3</li>
+                          <li>Bootstrap</li>
+                          <li>JawsDB</li>
+                          <li>Heroku</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </a>
                 <a href="https://github.com/ram-sah/eat-da-burger" target="_blank"><i
@@ -224,34 +215,30 @@ class Code extends Component {
                   <div className="portfolio-box-caption">
                     <div className="project-category text-white-50">&#9758; Demo: Google-Book-Search</div>
                     <hr className="divider my-4" />
-                    <div className="project-name">This App utilizes React lifecycle methods to query and 
-                    display books based on user searches, and uses MongoDB so that users can save books to review or purchase later.</div>                    
-                    <hr />                    
-                    <p className="project-name">Technology Used:</p>
-                      <div className="row">
-                        <div className="column">
-                          <div className="card0">                          
-                          <ul className="card-text1">
-                            <li>JavaScript</li>
-                            <li>Node</li>
-                            <li>ReactJs</li>      
-                            <li>Ajax</li> 
-                            <li>Bootstrap</li>                      
-                            </ul> 
-                          </div>
-                        </div>
-                        <div className="column">
-                          <div className="card0">                          
-                          <ul className="card-text1">                        
-                            <li>Google-API</li>
-                            <li>JQuery</li>
-                            <li>MongoDB</li>
-                            <li>Font Awesome</li>   
-                            <li>Mongoose ODM</li>                          
-                            </ul> 
-                          </div>
-                        </div>
+                    <div className="project-name">This App utilizes React lifecycle methods to query and
+                    display books based on user searches, and uses MongoDB so that users can save books to review or purchase later.</div>
+                    <hr />
+                    <p className="project-tech">Technology Used:</p>
+                    <div className="row">
+                      <div className="column">
+                        <ul className="card-text1">
+                          <li>JavaScript</li>
+                          <li>Node</li>
+                          <li>ReactJs</li>
+                          <li>Ajax</li>
+                          <li>Bootstrap</li>
+                        </ul>
                       </div>
+                      <div className="column">
+                        <ul className="card-text1">
+                          <li>Google-API</li>
+                          <li>JQuery</li>
+                          <li>MongoDB</li>
+                          <li>Font Awesome</li>
+                          <li>Mongoose ODM</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </a>
                 <a href="https://github.com/ram-sah/Google-Books-Search-React" target="_blank"><i
@@ -261,8 +248,8 @@ class Code extends Component {
             </div>
             <hr className="divider1" />
 
-            {/* Flip card styles Start*/}
-            <div className="col-md-4 card-container">
+            {/* Flip card styles Start-1*/}
+            <div className="col-lg-4 col-md-6 col-sm-12 card-container">
               <div className="card-flip">
                 <div className="card front">
                   <img src={require("../assets/employee-directory.png")} className="card-img-top img-fluid az2" />
@@ -310,7 +297,7 @@ class Code extends Component {
             </div>
 
             {/* project:2 flip style*/}
-            <div className="col-md-4 card-container">
+            <div className="col-lg-4 col-md-6 col-sm-12 card-container">
               <div className="card-flip">
                 <div className="card front">
                   <img src={require("../assets/project-2.png")} className="card-img-top img-fluid az2" />
@@ -341,8 +328,7 @@ class Code extends Component {
                       <li>Sequelize</li>
                       <li>Sequelize-cli</li>
                       <li>Moment</li>
-                      <li>Travis</li>
-                      <li>Eslint</li>
+                      <li>Travis/ Eslint</li>
                       <li>Amcharts</li>
                       <li>Bootstrap</li>
                       <li>CSS3</li>
@@ -359,15 +345,15 @@ class Code extends Component {
             </div>
 
             {/* project:2 flip style*/}
-            <div className="col-md-4 card-container">
+            <div className="col-lg-4 col-md-6 col-sm-12 card-container">
               <div className="card-flip">
                 <div className="card front">
                   <img src={require("../assets/project-3.png")} className="card-img-top img-fluid az2" />
                   <div className="card-block">
                     <h4 className=" text-white-50 mt-1">Veteran Discount App:</h4>
                     <p className="ml-2 mb-2 text-justify mr-2">This is Full Stack Application with a database of all businesses that offer a Veterans discount,
-                    what that discount will be, a map with the closest location, and a scannable QR code that eventually would be used to
-                    scan at the business of users choosing. Also, this Veteran verification App makes it easier to prove users Veteran status.
+                    what that discount will be, a map with the closest location, and a scannable QRcode that eventually would be used to
+                    scan at the business of users choosing. Also, this App makes it easier to prove users Veteran status.
                 </p>
                   </div>
                 </div>
@@ -394,8 +380,7 @@ class Code extends Component {
                       <li>QRcode</li>
                       <li>Travis/ Eslint</li>
                       <li>React-google-maps</li>
-                      <li>Bootstrap</li>
-                      <li>CSS3</li>
+                      <li>CSS3/ Bootstrap</li>
                       <li>MongoDB</li>
                       <li>Heroku</li>
                     </ul>

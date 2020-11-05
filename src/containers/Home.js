@@ -5,7 +5,7 @@ class Home extends Component {
   render() {
     return (
       // <section style={ {width: "1000px" }}></section>     
-      <div className='card'> 
+      <div className='cardMain'> 
         <CenteredHeader> <strong> WELCOME !</strong> </CenteredHeader>
         <hr className="divider my-4" />
         <CenteredHeader1><strong>Hello 👋, I'm Ram !<br/> I live with Creativity.</strong></CenteredHeader1>

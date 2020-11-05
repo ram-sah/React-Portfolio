@@ -18,11 +18,11 @@ const AppDiv = styled.div`
   background: wheat;
 `;
 
-export const CenteredHeader = styled.h1`
+export const CenteredHeader = styled.h2`
   text-align: center;
   margin-top: 2em;
 `
-export const CenteredHeader1 = styled.h2`
+export const CenteredHeader1 = styled.h3`
   text-align: center;
   margin-top: 1em;
   line-height: 1.5;

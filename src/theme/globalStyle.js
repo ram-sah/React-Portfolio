@@ -59,19 +59,19 @@ injectGlobal`
       border-color: ${ColorScheme.primary};
     }
   }
-  .card {   
+  .cardMain {   
     background: #dfb8b8;
-    padding:0.2% 25% 8% 25%;
+    padding:0.2% 20% 8% 20%;
     margin: -1.4% -21.4% -4.19% -22%
   }
   .contactPg {   
     background: #e7d67c;
-    padding:0.2% 25% 8% 25%;
+    padding:0.2% 20% 8% 20%;
     margin: -1.4% -21.4% -4.19% -22%
   }
   .portfolioPg {   
     background: #0000ff3b;
-    padding:0.2% 25% 8% 25%;
+    padding:0.2% 20% 8% 20%;
     margin: -1.4% -21.4% -4.19% -22%
   }
   @media (max-width: 600px) {    
@@ -84,7 +84,7 @@ injectGlobal`
       padding:15px;
       margin: 0px;
     }
-    .card {   
+    .cardMain {   
       padding:15px;
       margin: 0px;
     }

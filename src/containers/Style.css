@@ -45,16 +45,19 @@
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* font-size: 1.4rem; */
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name {
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
-
+.project-tech {
+  font-size: 1.4rem;
+  color: #7808ef;
+}
 .text-white-75 {
   color: var(--white) !important;
 }
@@ -111,10 +114,10 @@ figure.aboutMe {
 }
 .az2 {
   width:650px!important;
-  height:300px!important;
+  height:250px!important;
 }
 .aaz {
- font-size:70px;  
+ font-size:60px;  
  text-align: center!important;
  margin-bottom: 4rem;
 }
@@ -143,7 +146,7 @@ figure.aboutMe {
   line-height: 2;
   text-align: justify;
   color: inherit;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;    
 }
 .skills {
@@ -158,7 +161,6 @@ figure.aboutMe {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  font-size: 25px;
 }
 
 .no-gutters {
@@ -193,8 +195,8 @@ figure.aboutMe {
 }
 .text-white-50 {
   color: #7808ef!important;
-  padding-top: 15px;
-  font-size: 25px;
+  padding-top: 10px;
+  font-size: 1.6rem;
   text-align: center;
 }
 .dropdown-divider {
@@ -728,10 +730,11 @@ hr.divider {
     max-width: 75%;
   }
 }
-/* 
+
 .card {
-  margin: 10px 10px;
-} */
+  background: #dfb8b8;
+  margin: 0px;
+}
 
 /* Flip Cards CSS */
 .card-container {
@@ -835,19 +838,22 @@ hr.divider {
 }
 
 .text-justify {
-  padding: 3rem;
-  font-size: 2.5rem;
+  padding: 2rem;
+  font-size: 2rem;
 }
 
 .card-text {
   margin-left: 6rem;
+  text-align: left;
+  font-size: 18px;
 }
 .card-text1 {
-  margin-left: 20px;
+  margin-left: 0px;
   text-align: left;
+  font-size: 1.3rem;
 }
 hr.divider1 {
-  border-width: 0.2rem;
+
   border-color: #f4623a;
 }
 
@@ -864,5 +870,5 @@ hr.divider1 {
 .column {
   display: block;
   margin-left: 5rem;
-  font-size: 18px;
+  font-size: 1.4rem;
 }
