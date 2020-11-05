@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8cb935465b064072953de7daae57d759",
+    "revision": "6e01737f220ff8b4fac5fe76cb05d7b1",
     "url": "/React-Portfolio/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/React-Portfolio/static/css/2.59bc9275.chunk.css"
   },
   {
-    "revision": "a38b1bca2634dc150389",
-    "url": "/React-Portfolio/static/css/main.116bf5e1.chunk.css"
+    "revision": "c4d96fb87c17a8dbd90f",
+    "url": "/React-Portfolio/static/css/main.bfc88329.chunk.css"
   },
   {
     "revision": "197a584ece35e70bd6ba",
@@ -20,28 +20,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/React-Portfolio/static/js/2.a08c0c9c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a38b1bca2634dc150389",
-    "url": "/React-Portfolio/static/js/main.bf728066.chunk.js"
+    "revision": "c4d96fb87c17a8dbd90f",
+    "url": "/React-Portfolio/static/js/main.bb74fa54.chunk.js"
   },
   {
     "revision": "0274f599536680666069",
     "url": "/React-Portfolio/static/js/runtime-main.27e0f504.js"
-  },
-  {
-    "revision": "3606550fcd4c7ade21ea0393e7621fca",
-    "url": "/React-Portfolio/static/media/Budget-Tracker.3606550f.png"
-  },
-  {
-    "revision": "8599b70f77f3f25f89a73e546cc90353",
-    "url": "/React-Portfolio/static/media/Employee-Summary.8599b70f.jpg"
-  },
-  {
-    "revision": "4cbe45b624e49f4d36887dc4a27693f2",
-    "url": "/React-Portfolio/static/media/Employee-Tracker.4cbe45b6.jpg"
-  },
-  {
-    "revision": "e796ea22aeaadbdfb6681ac59a6a30e6",
-    "url": "/React-Portfolio/static/media/Fitness-Tracker.e796ea22.png"
   },
   {
     "revision": "b57b60dcb54898ba26a9e1d11bf5286b",
@@ -50,10 +34,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3d0e31dda299a46ffc6b4827eb383bd7",
     "url": "/React-Portfolio/static/media/burger.3d0e31dd.gif"
-  },
-  {
-    "revision": "dad017a3465d004c31da6cabd943a9ae",
-    "url": "/React-Portfolio/static/media/code-quiz.dad017a3.png"
   },
   {
     "revision": "61853f6a46824403928bb6a77d8579dc",
@@ -80,24 +60,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/React-Portfolio/static/media/glyphicons-halflings-regular.fa277232.woff"
   },
   {
-    "revision": "f0f518de9ad6917721142d84387a4be5",
-    "url": "/React-Portfolio/static/media/notetaker.f0f518de.jpg"
-  },
-  {
-    "revision": "c8746be3ee78e05844544c23dc512085",
-    "url": "/React-Portfolio/static/media/password-generator.c8746be3.png"
+    "revision": "0d28c6b2a2eb3d81bd5d99b3f9a9c484",
+    "url": "/React-Portfolio/static/media/google-Book.0d28c6b2.png"
   },
   {
     "revision": "73766e66a8cffe1f6912b1a0804a96b4",
     "url": "/React-Portfolio/static/media/project-2.73766e66.png"
   },
   {
-    "revision": "f60ab2092edfa88bae9a19626b5f2098",
-    "url": "/React-Portfolio/static/media/ram.f60ab209.jpg"
+    "revision": "5c7a6bbe3e966a87d9b39e8b3a01ba8d",
+    "url": "/React-Portfolio/static/media/project-3.5c7a6bbe.png"
   },
   {
-    "revision": "5f0e84195d580b60043eb80a041a859a",
-    "url": "/React-Portfolio/static/media/scheduler.5f0e8419.jpg"
+    "revision": "f60ab2092edfa88bae9a19626b5f2098",
+    "url": "/React-Portfolio/static/media/ram.f60ab209.jpg"
   },
   {
     "revision": "833821bc475e2add1a7aabe593648a7c",
