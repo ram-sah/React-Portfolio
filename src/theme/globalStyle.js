@@ -74,16 +74,33 @@ injectGlobal`
     padding:0.2% 25% 8% 25%;
     margin: -1.4% -21.4% -4.19% -22%
   }
-  @media (max-width: 600px) { 
-    .card {   
-      background: #ddffbb75;
-      padding:15px;      
-    }
+  @media (max-width: 600px) {    
     .contactPg {   
       background: #e7d67c;      
       margin: 0px;
       padding:15px; 
     }
+    .portfolioPg {
+      padding:15px;
+      margin: 0px;
+    }
+    .card {   
+      padding:15px;
+      margin: 0px;
+    }
+    .portfolio1 {
+      padding:12px;
+      margin: 0px;
+    }
+    .aaz {      
+      margin-left: 40%
+     }
+    .home {
+      font-size: 20px;
+    }
   }
+  html,body{
+    overflow-x: hidden;
+}
 }
 `;

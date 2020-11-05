@@ -6,8 +6,8 @@ import Nav from './Nav.js'
 import Animate from '../Animate.js'
 
 const ProfileImage = styled.img`
-  width: 6em;
-  height: 6.5em;
+  width: 8em;
+  height: 9em;
   border-radius: 50%;
   margin-top: -40px;
 `;
@@ -31,7 +31,10 @@ const NavLink = styled(Link)`
   display: inline-flex;
   margin: 5px 10px;
   color: purple;
-  font-size: 30px;
+  font-size: 40px;
+  @media (max-width: 600px) {   
+    font-size: 30px;
+    }
 `
 class Header extends Component {
   render() {

@@ -17,6 +17,7 @@
   }
 .text-center {
   text-align: center !important;
+  font-size: 22px;
 }
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
   max-width: 1920px;
@@ -98,23 +99,27 @@
 }
 figure.aboutMe {
   padding-bottom: calc(10rem - 4.5rem); 
-  background-color: cadetblue;
+  background: linear-gradient(to right, #359df1, #ef982c);
 }
 .portfo1 {
   padding-bottom: calc(10rem - 4.5rem); 
   background-color: cadetblue;
 }
 .az {
-  width:650px;
-  height:250px;
+  width:650px!important;
+  height:400px!important;
+}
+.az2 {
+  width:650px!important;
+  height:300px!important;
 }
 .aaz {
- font-size:50px;  
+ font-size:70px;  
  text-align: center!important;
+ margin-bottom: 4rem;
 }
 .aaz1 {
-  font-size:50px; 
- 
+  font-size:50px;  
  }
  .phoneSize {
    font-size: 90px;
@@ -132,15 +137,13 @@ figure.aboutMe {
  .phoneMargin {
    margin-left: 20px;
  }
- .letsBold {
-   font-size: 30px!important;   
- }
+
 
  .home {
   line-height: 2;
   text-align: justify;
   color: inherit;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;    
 }
 .skills {
@@ -155,6 +158,7 @@ figure.aboutMe {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  font-size: 25px;
 }
 
 .no-gutters {
@@ -174,7 +178,7 @@ figure.aboutMe {
 .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
   position: relative;
   width: 100%;
-  text-align: center;
+  /* text-align: left; */
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -189,6 +193,9 @@ figure.aboutMe {
 }
 .text-white-50 {
   color: #7808ef!important;
+  padding-top: 15px;
+  font-size: 25px;
+  text-align: center;
 }
 .dropdown-divider {
   height: 0;
@@ -720,4 +727,142 @@ hr.divider {
     flex: 0 0 75%;
     max-width: 75%;
   }
+}
+/* 
+.card {
+  margin: 10px 10px;
+} */
+
+/* Flip Cards CSS */
+.card-container {
+  display: grid;
+  perspective: 700px;
+}
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+.card-flip {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+
+
+.card-color{
+  background: linear-gradient(to right, #248ee6, #789c51);
+  font-weight: bolder;
+}
+.card-color1{
+  background: linear-gradient(to right, #777d83, #ecec39);
+  font-weight: bolder;
+}
+
+/* Flip Cards CSS */
+.card-container {
+  display: grid;
+  perspective: 700px;
+}
+
+.card-flip {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.front {
+  grid-area: frontAndBack;
+  padding: 0px!important;
+  margin: 0px!important;
+}
+
+.back {
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+  padding: 0px!important;
+  margin: 0px!important;
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  right: 15px;
+  bottom: 15px;
+  background: #149ddd;
+  color: #fff;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  background: #2eafec;
+  transition: background 0.2s ease-in-out;
+}
+
+.text-justify {
+  padding: 3rem;
+  font-size: 2.5rem;
+}
+
+.card-text {
+  margin-left: 6rem;
+}
+.card-text1 {
+  margin-left: 20px;
+  text-align: left;
+}
+hr.divider1 {
+  border-width: 0.2rem;
+  border-color: #f4623a;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+/* #hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/portfolio/back.jpg") top center;
+  background-size: cover;
+} */
+
+.column {
+  display: block;
+  margin-left: 5rem;
+  font-size: 18px;
 }

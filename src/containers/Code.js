@@ -6,6 +6,7 @@ import { CenteredHeader } from "./App.js";
 
 export const PortButton = styled.a`
   padding: 10px 15px;
+  margin-left: 10%;
   border: 2px solid ${ColorScheme.secondary};
   border-radius: 3px;
   font-family: Gotham, Helvetica, Arial, sans-serif;
@@ -16,15 +17,15 @@ export const PortButton = styled.a`
     color: #fff;
     border-color: ${ColorScheme.primary};
   }
-  @media (max-width: 600px) {
-    padding: 5px 7px;
+  @media (max-width: 730px) {
+    padding: 0;
+    margin-left: 4%;
   }
 `;
 
-const PortButtonContainer = styled.div`
-  width: 30%;
-  margin: 0 auto;
-
+const PortButtonContainer = styled.div`  
+  margin-top: 20px;
+  text-align: right;
   @media (max-width: 600px) {
     margin-top: 15px;
     width: 50%;
@@ -33,7 +34,7 @@ const PortButtonContainer = styled.div`
 
 const UsedItem = styled.ul`
   display: inline-block;
-  padding: 7px 7px 5px;
+  padding: 8px 8px 8px;
   margin-right: 5px;
   margin-bottom: 10px;
   color: #fff;
@@ -42,20 +43,30 @@ const UsedItem = styled.ul`
   border-radius: 3px;
   width: 8em;
   text-transform: uppercase;
-  font-size: 19px;
+  font-size: 25px;
   font-weight: 800;
   letter-spacing: 0.5px;
+  @media (max-width: 600px) {   
+  font-size: 20px;
+  }
 `;
 const Skill = styled.ul`  
-  padding: 5px 7px 0px;
-  margin: 5% 30% 1% 30%;
+  padding: 5px;
+  margin: 5% 10% 1% 10%;
   text-align: center;
   color: black;  
   border-radius: 3px;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 800;
-  letter-spacing: 1.5px;      
+  letter-spacing: 1.5px; 
+
+  @media (max-width: 600px) {
+  padding: 2px 2px 0px;
+  margin: 0px;
+  font-size: 30px;
+  
+  }     
 `;
 
 class Code extends Component {
@@ -64,7 +75,7 @@ class Code extends Component {
       <div>
         <div className='portfolioPg'>
           <Skill>Skills:</Skill>
-          <hr className="divider my-4" /><hr />
+          <hr className="divider my-4" />
           <div className="row skills">
             <div className="col-lg-3 col-md-6 col-sm-6">
               <h3><UsedItem>Front-end:</UsedItem></h3>
@@ -74,10 +85,11 @@ class Code extends Component {
                 <li>Redux</li>
                 <li>AJAX</li>
                 <li>JSON</li>
-                <li>jQuery</li>     
+                <li>jQuery</li>
                 <li>HTML5</li>
                 <li>CSS3</li>
-                <li>Bootstrap </li>                           
+                <li>Bootstrap</li>
+                <li>Handlebars</li>
               </ul>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6">
@@ -87,6 +99,7 @@ class Code extends Component {
                 <li>Express.js</li>
                 <li>MySQL</li>
                 <li>MongoDB</li>
+                <li>Mongoose ODM</li>
               </ul>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6">
@@ -94,7 +107,7 @@ class Code extends Component {
               <ul>
                 <li>Templating Engines</li>
                 <li>Creating APIs</li>
-                <li>UserAuthentication</li>
+                <li>User Authentication</li>
                 <li>ORM (Sequelize)</li>
                 <li>MVC</li>
               </ul>
@@ -111,229 +124,295 @@ class Code extends Component {
               </ul>
             </div>
           </div>
-        </div>
-        <hr />
-        <div>
-          <Skill>My Recent Work:</Skill>
-          <hr className="divider my-4" />
-          <div className="portfolio1" id="portfolio">
-            <div className="container-fluid p-0">
-              <div className="row no-gutters">
-                <div className="col-lg-4 col-sm-12">
-                  <a className="portfolio-box" href="https://ram-sah.github.io/Employee-Directory/" target="_blank">
-                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/employee-directory.png")}
-                      alt="Employee-Directory" />
-                    <div className="portfolio-box-caption">
-                      <div className="project-category text-white-50">Demo</div>
-                      <hr className="divider my-4" />
-                      <div className="project-category text-white-50">Employee-Directory:</div><hr />
-                      <div className="project-name">This app helps the user to view their entire employee directory and have quick access to their information!
+        </div>        
+        {/* <div> */}
+        <Skill>My Project Work:</Skill>
+        <hr className="divider my-4" />
+        <div className="portfolio1" id="portfolio">
+          <div className="container-fluid p-0">
+            <div className="row no-gutters">
+              <div className="col-lg-4 col-md-6 col-sm-12">
+                <a className="portfolio-box" href="https://ram-sah.github.io/Weather-Dashboard" target="_blank">
+                  <img className="img-fluid az" style={{ width: "650px", height: "400px" }} src={require("../assets/weather.jpg")}
+                    alt="weather" />
+                  <div className="portfolio-box-caption">
+                    <div className="project-category text-white-50">&#9758; Demo: Weather-Dashboard</div>
+                    <hr className="divider my-4" />
+                    <div className="project-name">5-Day Weather Dashboard to see the weather of any City. 
+                    This App helps to save data on licalStorage and revisit your previous searches as easy to click buttons.                     
+                    <hr />                    
+                    <p className="project-name">Technology Used:</p>
+                      <div className="row">
+                        <div className="column">
+                          <div className="card0">                          
+                          <ul className="card-text1">
+                            <li>JavaScript</li>
+                            <li>CSS3</li>
+                            <li>HTML</li>      
+                            <li>Ajax</li> 
+                            <li>Bootstrap</li>                      
+                            </ul> 
+                          </div>
+                        </div>
+                        <div className="column">
+                          <div className="card0">                          
+                          <ul className="card-text1">                        
+                            <li>Weather Map API</li>
+                            <li>JQuery</li>
+                            <li>Momentjs</li>
+                            <li>Font Awesome</li>   
+                            <li>localStorage</li>                          
+                            </ul> 
+                          </div>
+                        </div>
+                      </div>              
+                    </div>
+                  </div>
+                </a>
+                <a href="https://github.com/ram-sah/Weather-Dashboard" target="_blank"><i
+                  className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
+                </a>
+              </div>
+              {/* eat sa burger */}
+              <div className="col-lg-4 col-md-6 col-sm-12">
+                <a className="portfolio-box" href="https://damp-brushlands-54954.herokuapp.com" target="_blank">
+                  <img className="img-fluid az" style={{ width: "650px", height: "400px" }} src={require("../assets/burger.gif")}
+                    alt="Eat-da-Burger" />
+                  <div className="portfolio-box-caption">
+                    <div className="project-category text-white-50">&#9758; Demo: Eat da Burger App</div>
+                    <hr className="divider my-4" />
+                    
+                    <div className="project-name">It is a restaurant App that lets users input the names of the burgers they'd like the eat. 
+                    it will generate under the to be eaten heading. User can Devour that burger by clicking on it.</div>
+                    <hr /> 
+                    <p className="project-name">Technology Used:</p>
+                      <div className="row">
+                        <div className="column">
+                          <div className="card0">                          
+                          <ul className="card-text1">
+                            <li>JavaScript</li>
+                            <li>MySQL</li>                            
+                            <li>express-handlebars</li>      
+                            <li>express</li> 
+                            <li>Bootstrap</li>                      
+                            </ul> 
+                          </div>
+                        </div>
+                        <div className="column">
+                          <div className="card0">                          
+                          <ul className="card-text1">   
+                            <li>JQuery</li>
+                            <li>CSS3</li>
+                            <li>Font Awesome</li>   
+                            <li>JawsDB</li>    
+                            <li>Heroku</li>                      
+                            </ul> 
+                          </div>
+                        </div>
+                      </div> 
+                  </div>
+                </a>
+                <a href="https://github.com/ram-sah/eat-da-burger" target="_blank"><i
+                  className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
+                </a>
+              </div>
+              {/* Google Book Search */}
+              <div className="col-lg-4 col-md-6 col-sm-12">
+                <a className="portfolio-box" href="https://google-book-search20.herokuapp.com" target="_blank">
+                  <img className="img-fluid az" style={{ width: "650px", height: "400px" }} src={require("../assets/google-Book.png")}
+                    alt="Google-Book" />
+                  <div className="portfolio-box-caption">
+                    <div className="project-category text-white-50">&#9758; Demo: Google-Book-Search</div>
+                    <hr className="divider my-4" />
+                    <div className="project-name">This App utilizes React lifecycle methods to query and 
+                    display books based on user searches, and uses MongoDB so that users can save books to review or purchase later.</div>                    
+                    <hr />                    
+                    <p className="project-name">Technology Used:</p>
+                      <div className="row">
+                        <div className="column">
+                          <div className="card0">                          
+                          <ul className="card-text1">
+                            <li>JavaScript</li>
+                            <li>Node</li>
+                            <li>ReactJs</li>      
+                            <li>Ajax</li> 
+                            <li>Bootstrap</li>                      
+                            </ul> 
+                          </div>
+                        </div>
+                        <div className="column">
+                          <div className="card0">                          
+                          <ul className="card-text1">                        
+                            <li>Google-API</li>
+                            <li>JQuery</li>
+                            <li>MongoDB</li>
+                            <li>Font Awesome</li>   
+                            <li>Mongoose ODM</li>                          
+                            </ul> 
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                  <a href="https://github.com/ram-sah/Employee-Directory" target="_blank"><i
-                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
-                  </a>
-                </div>
-
-                <div className="col-lg-4 col-sm-12">
-                  <a className="portfolio-box" href="https://progressive-budget20.herokuapp.com/" target="_blank">
-                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/Budget-Tracker.png")}
-                      alt="Budget-Tracker" />
-                    <div className="portfolio-box-caption">
-                      <div className="project-category text-white-50">Demo</div>
-                      <hr className="divider my-4" />
-                      <div className="project-category text-white-50">Budget-Tracker App:</div><hr />
-                      <div className="project-name">In this application, users will be able to track their withdrawals and deposits with or without an internet connection!
-                            </div>
-                    </div>
-                  </a>
-                  <a href="https://github.com/ram-sah/Progressive-Budget" target="_blank"><i
-                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
-                  </a>
-                </div>
-
-                <div className="col-lg-4 col-sm-12">
-                  <a className="portfolio-box" href="https://damp-brushlands-54954.herokuapp.com" target="_blank">
-                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/burger.gif")}
-                      alt="Eat-da-Burger" />
-                    <div className="portfolio-box-caption">
-                      <div className="project-category text-white-50">Demo</div>
-                      <hr className="divider my-4" />
-                      <div className="project-category text-white-50">Eat da Burger App App:</div><hr />
-                      <div className="project-name">This is Resturant CLI Application lets users input the names of the burgers they'd like to eat! </div>
-                    </div>
-                  </a>
-                  <a href="https://github.com/ram-sah/eat-da-burger" target="_blank"><i
-                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
-                  </a>
-                </div>
-              </div> <hr />
-
-              <div className="row no-gutters">
-                <div className="col-lg-4 col-sm-12">
-                  <a className="portfolio-box" href="https://fitness-tracker20.herokuapp.com/?id=5f7258b3eefd640017741c45" target="_blank">
-                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/Fitness-Tracker.png")}
-                      alt="Fitness-Tracker" />
-                    <div className="portfolio-box-caption">
-                      <div className="project-category text-white-50">Demo</div>
-                      <hr className="divider my-4" />
-                      <div className="project-category text-white-50">Fitness-Tracker App:</div><hr />
-                      <div className="project-name">Fitness Tracker is an Application to view, create and track daily workouts!</div>
-                    </div>
-                  </a>
-                  <a href="https://github.com/ram-sah/Fitness-Tracker" target="_blank"><i
-                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
-                  </a>
-                </div>
-
-                <div className="col-lg-4 col-sm-12">
-                  <a className="portfolio-box" href="https://project-2-group1.herokuapp.com" target="_blank">
-                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/project-2.png")}
-                      alt="project-2" />
-                    <div className="portfolio-box-caption">
-                      <div className="project-category text-white-50">Demo</div>
-                      <hr className="divider my-4" />
-                      <div className="project-category text-white-50">Project-2</div><hr />
-                      <div className="project-name">Wine 'A' Lot Management System Help to Visualize Historical Sales Data ! </div>
-                    </div>
-                  </a>
-                  <a href="https://github.com/ram-sah/Project-2" target="_blank"><i
-                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
-                  </a>
-                </div>
-
-                <div className="col-lg-4 col-sm-12">
-                  <a className="portfolio-box" href="https://damp-dawn-43442.herokuapp.com" target="_blank">
-                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/notetaker.jpg")}
-                      alt="notetaker" />
-                    <div className="portfolio-box-caption">
-                      <div className="project-category text-white-50">Demo</div>
-                      <hr className="divider my-4" />
-                      <div className="project-category text-white-50">Note-Taker App:</div><hr />
-                      <div className="project-name">This Application uses to organize your thoughts and keep track of tasks.
-                            </div>
-                    </div>
-                  </a>
-                  <a href="https://github.com/ram-sah/Note-Taker" target="_blank"><i
-                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
-                  </a>
-                </div>
-              </div> <hr />
-
-              <div className="row no-gutters">
-                <div className="col-lg-4 col-sm-12">
-                  <a className="portfolio-box" href="https://ram-sah.github.io/Weather-Dashboard" target="_blank">
-                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/weather.jpg")}
-                      alt="weather" />
-                    <div className="portfolio-box-caption">
-                      <div className="project-category text-white-50">Demo</div>
-                      <hr className="divider my-4" />
-                      <div className="project-category text-white-50">Weather-Dashboard:</div><hr />
-                      <div className="project-name">My Weather-Dashboard Web Page to find <br />5-Days
-                        Weather Forcast of any City !
-                      </div>
-                    </div>
-                  </a>
-                  <a href="https://github.com/ram-sah/Weather-Dashboard" target="_blank"><i
-                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
-                  </a>
-                </div>
-
-                <div className="col-lg-4 col-sm-12">
-                  <a className="portfolio-box" href="https://github.com/ram-sah/Employee-Summary#Demo" target="_blank">
-                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/Employee-Summary.jpg")}
-                      alt="Employee-Summary" />
-                    <div className="portfolio-box-caption">
-                      <div className="project-category text-white-50">Demo</div>
-                      <hr className="divider my-4" />
-                      <div className="project-category text-white-50">Employee Summary:</div><hr />
-                      <div className="project-name">Command-line Application to Generates Team Profile !
-                      </div>
-                    </div>
-                  </a>
-                  <a href="https://github.com/ram-sah/Employee-Summary" target="_blank"><i
-                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
-                  </a>
-                </div>
-
-                <div className="col-lg-4 col-sm-12">
-                  <a className="portfolio-box" href="https://ram-sah.github.io/Employee-Tracker/" target="_blank">
-                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/Employee-Tracker.jpg")}
-                      alt="Employee-Tracker" />
-                    <div className="portfolio-box-caption">
-                      <div className="project-category text-white-50">Demo</div>
-                      <hr className="divider my-4" />
-                      <div className="project-category text-white-50">Employee Tracker:</div><hr />
-                      <div className="project-name">This Application helps to manages a company's employees!
-                      </div>
-                    </div>
-                  </a>
-                  <a href="https://github.com/ram-sah/Employee-Tracker" target="_blank"><i
-                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
-                  </a>
-                </div>
-              </div> <hr />
-
-              <div className="row no-gutters">
-                <div className="col-lg-4 col-sm-12">
-                  <a className="portfolio-box" href="https://ram-sah.github.io/Day-Planner" target="_blank">
-                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/scheduler.jpg")}
-                      alt="scheduler" />
-                    <div className="portfolio-box-caption">
-                      <div className="project-category text-white-50">Demo</div>
-                      <hr className="divider my-4" />
-                      <div className="project-category text-white-50">Day Planner:</div><hr />
-                      <div className="project-name">This Application helps to keep track Day Planning the past, present, or future!
-                      </div>
-                    </div>
-                  </a>
-                  <a href="https://github.com/ram-sah/Day-Planner" target="_blank"><i
-                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
-                  </a>
-                </div>
-
-                <div className="col-lg-4 col-sm-12">
-                  <a className="portfolio-box" href="https://ram-sah.github.io/4.Quiz-Code" target="_blank">
-                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/code-quiz.png")}
-                      alt="code-quiz" />
-                    <div className="portfolio-box-caption">
-                      <div className="project-category text-white-50">Demo</div>
-                      <hr className="divider my-4" />
-                      <div className="project-category text-white-50">Code Quiz Taker:</div><hr />
-                      <div className="project-name">Code Quiz Taker Web Page to test Quiz knowledge on time frame !
-                      </div>
-                    </div>
-                  </a>
-                  <a href="https://github.com/ram-sah/4.Quiz-Code" target="_blank"><i
-                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
-                  </a>
-                </div>
-
-                <div className="col-lg-4 col-sm-12">
-                  <a className="portfolio-box" href="https://ram-sah.github.io/3.Password-generator" target="_blank">
-                    <img className="img-fluid az" style={{ width: "650px", height: "250px" }} src={require("../assets/password-generator.png")}
-                      alt="password-generator" />
-                    <div className="portfolio-box-caption">
-                      <div className="project-category text-white-50">Demo</div>
-                      <hr className="divider my-4" />
-                      <div className="project-category text-white-50">Password Generator:</div><hr />
-                      <div className="project-name">Password Generator Web Page help to generaes passwords on the basis of prompt questions !
-                      </div>
-                    </div>
-                  </a>
-                  <a href="https://github.com/ram-sah/3.Password-generator" target="_blank"><i
-                    className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
-                  </a>
-                </div>
+                  </div>
+                </a>
+                <a href="https://github.com/ram-sah/Google-Books-Search-React" target="_blank"><i
+                  className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
+                </a>
               </div>
             </div>
+            <hr className="divider1" />
+
+            {/* Flip card styles Start*/}
+            <div className="col-md-4 card-container">
+              <div className="card-flip">
+                <div className="card front">
+                  <img src={require("../assets/employee-directory.png")} className="card-img-top img-fluid az2" />
+                  <div className="card-block">
+                    <h4 className=" text-white-50">Employee Directory</h4>
+                    <p className="ml-2 mb-2 text-justify mr-2">The Employee Directory
+                    application will allow users to view employee data. The
+                    employee can filter or search the other employee's details. The user can
+                    search the employee by their first name, last name, city, and sate. The
+                    filter functionality allows users to filter employees by their first name,
+                    last name, state, and city.
+                    </p>
+                  </div>
+                </div>
+                {/* <!-- Card 2 Back --> */}
+                <div className="card back">
+                  <div className="card-header text-dark text-white-50">
+                    <strong>Front-end Application</strong>
+                  </div>
+                  <div className="card-block">
+                    <h6 className=" mt-2 text-white-50 text-dark">Technologies Used</h6>
+                    <hr className="divider my-4" />
+                    <ul className="card-text">
+                      <li>React.js</li>
+                      <li>React-Bootstrap</li>
+                      <li>React-router-dom</li>
+                      <li>React-scripts</li>
+                      <li>NodeJs</li>
+                      <li>JavaScript</li>
+                      <li>CSS3</li>
+                      <li>JSX</li>
+                      <li>Axios</li>
+                      <li>API</li>
+                      <li>Moment</li>
+                      <li>Font Awesome</li>
+                      <li>Gh-pages</li>
+                    </ul>
+                    <a href="https://github.com/ram-sah/Employee-Directory" target="_blank"
+                    ><PortButton>GitHub Repo</PortButton></a>
+                    <a href="https://ram-sah.github.io/Employee-Directory"
+                      target="_blank"><PortButton>Project URL</PortButton> </a>
+                  </div>
+                </div>
+              </div><hr className="divider1" />
+            </div>
+
+            {/* project:2 flip style*/}
+            <div className="col-md-4 card-container">
+              <div className="card-flip">
+                <div className="card front">
+                  <img src={require("../assets/project-2.png")} className="card-img-top img-fluid az2" />
+                  <div className="card-block">
+                    <h4 className=" text-white-50 mt-1">Wine 'A' Lot Management System</h4>
+                    <p className="ml-2 mb-2 text-justify mr-2">This project helps to keep track the inventory and sales information.
+                    This Application is a simple reporting dashboard to quickly visualize historical sales data and make data driven decisions.
+                    Users can easily find the Slow or fast movement of their products also Slaes Margin, profit and loss in their business.
+                </p>
+                  </div>
+                </div>
+                {/* <!-- Card 2 Back --> */}
+                <div className="card back">
+                  <div className="card-header text-dark text-white-50">
+                    <strong>Project-2: Front/Back End Application</strong>
+                  </div>
+                  <div className="card-block">
+                    <h4 className=" mt-2 text-white-50 text-dark">Technologies Used:</h4>
+                    <hr className="divider my-4" />
+                    <ul className="card-text">
+                      <li>Express-handlebars</li>
+                      <li>NodeJs</li>
+                      <li>JavaScript</li>
+                      <li>jQuery</li>
+                      <li>Express</li>
+                      <li>MySQL</li>
+                      <li>Migration</li>
+                      <li>Sequelize</li>
+                      <li>Sequelize-cli</li>
+                      <li>Moment</li>
+                      <li>Travis</li>
+                      <li>Eslint</li>
+                      <li>Amcharts</li>
+                      <li>Bootstrap</li>
+                      <li>CSS3</li>
+                      <li>JawsDB</li>
+                      <li>Heroku</li>
+                    </ul>
+                    <a href="https://github.com/ram-sah/Project-2" target="_blank"
+                    ><PortButton>GitHub Repo </PortButton></a>
+                    <a href="https://project-2-group1.herokuapp.com/7"
+                      target="_blank"><PortButton>Project URL </PortButton></a>
+                  </div>
+                </div>
+              </div><hr className="divider1" />
+            </div>
+
+            {/* project:2 flip style*/}
+            <div className="col-md-4 card-container">
+              <div className="card-flip">
+                <div className="card front">
+                  <img src={require("../assets/project-3.png")} className="card-img-top img-fluid az2" />
+                  <div className="card-block">
+                    <h4 className=" text-white-50 mt-1">Veteran Discount App:</h4>
+                    <p className="ml-2 mb-2 text-justify mr-2">This is Full Stack Application with a database of all businesses that offer a Veterans discount,
+                    what that discount will be, a map with the closest location, and a scannable QR code that eventually would be used to
+                    scan at the business of users choosing. Also, this Veteran verification App makes it easier to prove users Veteran status.
+                </p>
+                  </div>
+                </div>
+                {/* <!-- Card 2 Back --> */}
+                <div className="card back">
+                  <div className="card-header text-dark text-white-50">
+                    <strong>Project-3: Full Stack Web Application</strong>
+                  </div>
+                  <div className="card-block">
+                    <h4 className=" mt-2 text-white-50 text-dark">Technologies Used:</h4>
+                    <hr className="divider my-4" />
+                    <ul className="card-text">
+                      <li>ReactJs</li>
+                      <li>react-router-dom</li>
+                      <li>JavaScript</li>
+                      <li>jQuery</li>
+                      <li>Express</li>
+                      <li>Mongoose</li>
+                      <li>Yelp AP</li>
+                      <li>Google Map API</li>
+                      <li>Axios</li>
+                      <li>Bcryptjs</li>
+                      <li>jsonwebtoken</li>
+                      <li>QRcode</li>
+                      <li>Travis/ Eslint</li>
+                      <li>React-google-maps</li>
+                      <li>Bootstrap</li>
+                      <li>CSS3</li>
+                      <li>MongoDB</li>
+                      <li>Heroku</li>
+                    </ul>
+                    <a href="https://github.com/ydoc118/project3" target="_blank"
+                    ><PortButton>GitHub Repo </PortButton></a>
+                    <a href="https://vetdiscount.herokuapp.com/"
+                      target="_blank"><PortButton>Project URL </PortButton></a>
+                  </div>
+                </div>
+              </div><hr className="divider1" />
+            </div>
           </div>
-          <hr />
-          <PortButtonContainer>
-            <PortButton href="#">HOME ▲</PortButton>
-          </PortButtonContainer>
         </div>
+        <PortButtonContainer>
+          <PortButton href="#">HOME ▲</PortButton>
+        </PortButtonContainer>
+        {/* </div> */}
       </div>
     );
   }

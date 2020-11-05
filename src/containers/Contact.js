@@ -49,7 +49,7 @@ class Contact extends Component {
           </form>
         </FormDiv>
 
-        <section id="contact" className="section page-section green">
+        <section>
           <CenteredHeader>
             Need to reach out? Feel free to call or email me.
           </CenteredHeader>

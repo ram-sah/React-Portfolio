@@ -15,11 +15,17 @@ const AppDiv = styled.div`
   min-height: 100vh;
   flex-direction: column;
   font-size: 1.5em;
+  background: wheat;
 `;
 
-export const CenteredHeader = styled.h2`
+export const CenteredHeader = styled.h1`
   text-align: center;
   margin-top: 2em;
+`
+export const CenteredHeader1 = styled.h2`
+  text-align: center;
+  margin-top: 1em;
+  line-height: 1.5;
 `
 const ContainerDiv = styled.div`
   margin: 1% 15% 3% 15%;

@@ -3,11 +3,10 @@ import styled from 'styled-components';
 import { ColorScheme } from '../theme/styleConstants.js'
 
 const FooterDiv = styled.div`
-  padding-top: 8rem;
-  padding-bottom: 0;
+  padding 8rem;
   background-color: ${ColorScheme.mainLight};
   text-align: center;
-  height: 250px;
+  height: 300px;
 `;
 
 const SocialIconList = styled.ul`
