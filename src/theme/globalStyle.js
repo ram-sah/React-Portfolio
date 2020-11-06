@@ -70,7 +70,7 @@ injectGlobal`
     margin: -1.4% -21.4% -4.19% -22%
   }
   .portfolioPg {   
-    background: #0000ff3b;
+    background: #0000ff52;
     padding:0.2% 20% 8% 20%;
     margin: -1.4% -21.4% -4.19% -22%
   }

@@ -110,7 +110,7 @@ figure.aboutMe {
 }
 .az {
   width:650px!important;
-  height:400px!important;
+  height:300px!important;
 }
 .az2 {
   width:650px!important;
@@ -211,7 +211,12 @@ hr.divider {
   border-color: #f4623a;
 }
 
-
+@media (max-width: 1091px) {
+  .az {
+    width:650px!important;
+    height:400px!important;
+  }
+}
 @media (min-width: 576px) {
   .col-sm {
     text-align: center;
@@ -705,29 +710,9 @@ hr.divider {
     max-width: 33.3333333333%;
   }
 
-  .col-lg-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%;
-  }
-
   .col-lg-6 {
     flex: 0 0 50%;
     max-width: 50%;
-  }
-
-  .col-lg-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%;
-  }
-
-  .col-lg-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%;
-  }
-
-  .col-lg-9 {
-    flex: 0 0 75%;
-    max-width: 75%;
   }
 }
 
@@ -770,12 +755,6 @@ hr.divider {
   font-weight: bolder;
 }
 
-/* Flip Cards CSS */
-.card-container {
-  display: grid;
-  perspective: 700px;
-}
-
 .card-flip {
   display: grid;
   grid-template: 1fr / 1fr;
@@ -793,6 +772,7 @@ hr.divider {
   grid-area: frontAndBack;
   padding: 0px!important;
   margin: 0px!important;
+  height: 600px;
 }
 
 .back {
@@ -800,6 +780,7 @@ hr.divider {
   transform: rotateY(-180deg);
   padding: 0px!important;
   margin: 0px!important;
+  height: 600px;
 }
 
 .card-container:hover .card-flip {
@@ -839,13 +820,13 @@ hr.divider {
 
 .text-justify {
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .card-text {
   margin-left: 6rem;
   text-align: left;
-  font-size: 18px;
+  font-size: 1.6rem;
 }
 .card-text1 {
   margin-left: 0px;
@@ -857,13 +838,10 @@ hr.divider1 {
   border-color: #f4623a;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
 /* #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/portfolio/back.jpg") top center;
+  background: url("../img/portfolio/pic.jpg") top center;
   background-size: cover;
 } */
 

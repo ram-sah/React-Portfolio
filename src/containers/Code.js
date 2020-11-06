@@ -81,15 +81,15 @@ class Code extends Component {
             <div className="col-lg-3 col-md-6 col-sm-6">
               <h3><UsedItem>Front-end:</UsedItem></h3>
               <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Bootstrap</li>
                 <li>JavaScript (ES6)</li>
                 <li>ReactJs</li>
                 <li>Redux</li>
                 <li>AJAX</li>
                 <li>JSON</li>
                 <li>jQuery</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Bootstrap</li>
                 <li>Handlebars</li>
               </ul>
             </div>
@@ -132,7 +132,7 @@ class Code extends Component {
             <div className="row no-gutters">
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <a className="portfolio-box" href="https://ram-sah.github.io/Weather-Dashboard" target="_blank">
-                  <img className="img-fluid az" style={{ width: "650px", height: "400px" }} src={require("../assets/weather.jpg")}
+                  <img className="img-fluid az"  src={require("../assets/weather.jpg")}
                     alt="weather" />
                   <div className="portfolio-box-caption">
                     <div className="project-category text-white-50">&#9758; Demo: Weather-Dashboard</div>
@@ -171,7 +171,7 @@ class Code extends Component {
               {/* eat sa burger */}
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <a className="portfolio-box" href="https://damp-brushlands-54954.herokuapp.com" target="_blank">
-                  <img className="img-fluid az" style={{ width: "650px", height: "400px" }} src={require("../assets/burger.gif")}
+                  <img className="img-fluid az"  src={require("../assets/burger.gif")}
                     alt="Eat-da-Burger" />
                   <div className="portfolio-box-caption">
                     <div className="project-category text-white-50">&#9758; Demo: Eat da Burger App</div>
@@ -210,7 +210,7 @@ class Code extends Component {
               {/* Google Book Search */}
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <a className="portfolio-box" href="https://google-book-search20.herokuapp.com" target="_blank">
-                  <img className="img-fluid az" style={{ width: "650px", height: "400px" }} src={require("../assets/google-Book.png")}
+                  <img className="img-fluid az"  src={require("../assets/google-Book.png")}
                     alt="Google-Book" />
                   <div className="portfolio-box-caption">
                     <div className="project-category text-white-50">&#9758; Demo: Google-Book-Search</div>
@@ -245,9 +245,6 @@ class Code extends Component {
                   className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
                 </a>
               </div>
-            </div>
-            <hr className="divider1" />
-
             {/* Flip card styles Start-1*/}
             <div className="col-lg-4 col-md-6 col-sm-12 card-container">
               <div className="card-flip">
@@ -303,7 +300,7 @@ class Code extends Component {
                   <img src={require("../assets/project-2.png")} className="card-img-top img-fluid az2" />
                   <div className="card-block">
                     <h4 className=" text-white-50 mt-1">Wine 'A' Lot Management System</h4>
-                    <p className="ml-2 mb-2 text-justify mr-2">This project helps to keep track the inventory and sales information.
+                    <p className="ml-2 mb-2 text-justify mr-2">This Business Purpose project helps to keep track the inventory and sales information.
                     This Application is a simple reporting dashboard to quickly visualize historical sales data and make data driven decisions.
                     Users can easily find the Slow or fast movement of their products also Slaes Margin, profit and loss in their business.
                 </p>
@@ -351,9 +348,9 @@ class Code extends Component {
                   <img src={require("../assets/project-3.png")} className="card-img-top img-fluid az2" />
                   <div className="card-block">
                     <h4 className=" text-white-50 mt-1">Veteran Discount App:</h4>
-                    <p className="ml-2 mb-2 text-justify mr-2">This is Full Stack Application with a database of all businesses that offer a Veterans discount,
+                    <p className="ml-2 mb-2 text-justify mr-2">This is a Full Stack App with a database of all businesses that offer a Veterans discount,
                     what that discount will be, a map with the closest location, and a scannable QRcode that eventually would be used to
-                    scan at the business of users choosing. Also, this App makes it easier to prove users Veteran status.
+                    scan at the business of users choosing. Also, this App makes it easier to prove users Veteran status, Only Valid Veteran will be able to login.
                 </p>
                   </div>
                 </div>
@@ -367,18 +364,19 @@ class Code extends Component {
                     <hr className="divider my-4" />
                     <ul className="card-text">
                       <li>ReactJs</li>
-                      <li>react-router-dom</li>
+                      <li>React-router-dom</li>
                       <li>JavaScript</li>
                       <li>jQuery</li>
                       <li>Express</li>
                       <li>Mongoose</li>
-                      <li>Yelp AP</li>
+                      <li>Yelp API</li>
                       <li>Google Map API</li>
                       <li>Axios</li>
                       <li>Bcryptjs</li>
                       <li>jsonwebtoken</li>
                       <li>QRcode</li>
-                      <li>Travis/ Eslint</li>
+                      <li>Travis</li>
+                      <li>Eslint</li>
                       <li>React-google-maps</li>
                       <li>CSS3/ Bootstrap</li>
                       <li>MongoDB</li>
@@ -392,6 +390,9 @@ class Code extends Component {
                 </div>
               </div><hr className="divider1" />
             </div>
+
+            </div>
+
           </div>
         </div>
         <PortButtonContainer>

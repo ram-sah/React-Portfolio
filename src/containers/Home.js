@@ -8,7 +8,7 @@ class Home extends Component {
       <div className='cardMain'> 
         <CenteredHeader> <strong> WELCOME !</strong> </CenteredHeader>
         <hr className="divider my-4" />
-        <CenteredHeader1><strong>Hello 👋, I'm Ram !<br/> I live with Creativity.</strong></CenteredHeader1>
+        <CenteredHeader1><strong>Hello 👋 !<br/>  I'm Ram, I live with Creativity.</strong></CenteredHeader1>
         <div className="home">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thank you for stopping by to visiting my portfolio. I am excited to transition my career from Customer Service to being a Full Stack Web Developer. 
         I'm an enthusiastic Developer working with new technologies, and always keep on learning new things.
