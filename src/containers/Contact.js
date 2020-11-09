@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { CenteredHeader } from './App.js'
+import { CenteredHeader, CenteredHeader1 } from './App.js'
 import "./Style.css";
 const FormDiv = styled.div`
   margin: 0 auto;
@@ -29,7 +29,7 @@ class Contact extends Component {
   render() {
     return (
       <div className='contactPg'>
-        <CenteredHeader className="letsBold">Let's Get in Touch!</CenteredHeader>
+        <CenteredHeader><strong>Let's Get in Touch!</strong></CenteredHeader>
         <hr className="divider my-4" />
         <FormDiv>
           <form action="https://formspree.io/rsah1@asu.edu" method="POST" id="contactform">
@@ -50,9 +50,10 @@ class Contact extends Component {
         </FormDiv>
 
         <section>
-          <CenteredHeader>
-            Need to reach out? Feel free to call or email me.
-          </CenteredHeader>
+          <CenteredHeader1>
+           Need to reach out? Feel free to call or email me. 
+          <h3>Name: Ram Sah</h3><h3>West Chester, PA- 19380.</h3>
+          </CenteredHeader1>
 
           <div className="row">
             <div className="phoneMargin col-lg-6 text-center mb-5 mb-lg-0">

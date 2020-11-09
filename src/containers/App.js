@@ -26,6 +26,7 @@ export const CenteredHeader1 = styled.h3`
   text-align: center;
   margin-top: 1em;
   line-height: 1.5;
+  font-weight: bolder;
 `
 const ContainerDiv = styled.div`
   margin: 1% 15% 3% 15%;

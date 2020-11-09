@@ -211,12 +211,6 @@ hr.divider {
   border-color: #f4623a;
 }
 
-@media (max-width: 1091px) {
-  .az {
-    width:650px!important;
-    height:400px!important;
-  }
-}
 @media (min-width: 576px) {
   .col-sm {
     text-align: center;
@@ -716,6 +710,41 @@ hr.divider {
   }
 }
 
+@media (max-width: 1091px) {
+  .az {
+    width:650px!important;
+    height:400px!important;
+  }
+  .front, .back {   
+    height: 560px!important;
+    margin: 0px;
+  }  
+  .az2 {
+    height:200px!important;
+  }
+}
+
+@media (max-width: 767px) { 
+  .row {
+    width: 90%!important;
+    margin-left: 5%!important;
+  } 
+}
+
+@media (max-width: 400px) { 
+  .row {
+    width: 109%!important;
+    margin-left:-5%!important;
+  }
+  .front {   
+    height: 575px!important;   
+  } 
+  .home {
+    line-height: 1.7;    
+    font-size: 1.7rem!important; 
+  }
+ 
+}
 .card {
   background: #dfb8b8;
   margin: 0px;
@@ -772,7 +801,7 @@ hr.divider {
   grid-area: frontAndBack;
   padding: 0px!important;
   margin: 0px!important;
-  height: 600px;
+  height: 560px;
 }
 
 .back {
@@ -780,7 +809,7 @@ hr.divider {
   transform: rotateY(-180deg);
   padding: 0px!important;
   margin: 0px!important;
-  height: 600px;
+  height: 560px;
 }
 
 .card-container:hover .card-flip {

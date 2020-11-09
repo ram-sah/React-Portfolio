@@ -65,7 +65,7 @@ injectGlobal`
     margin: -1.4% -21.4% -4.19% -22%
   }
   .contactPg {   
-    background: #e7d67c;
+    background: #0dcc6b6b;
     padding:0.2% 20% 8% 20%;
     margin: -1.4% -21.4% -4.19% -22%
   }

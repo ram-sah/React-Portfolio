@@ -48,7 +48,7 @@ const UsedItem = styled.ul`
   font-weight: 800;
   letter-spacing: 0.5px;
   @media (max-width: 600px) {   
-  font-size: 20px;
+  font-size: 16px;
   }
 `;
 const Skill = styled.ul`  
@@ -58,14 +58,14 @@ const Skill = styled.ul`
   color: black;  
   border-radius: 3px;
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 800;
   letter-spacing: 1.5px; 
 
   @media (max-width: 600px) {
   padding: 2px 2px 0px;
   margin: 0px;
-  font-size: 30px;
+  font-size: 22px;
   
   }     
 `;
@@ -138,7 +138,7 @@ class Code extends Component {
                     <div className="project-category text-white-50">&#9758; Demo: Weather-Dashboard</div>
                     <hr className="divider my-4" />
                     <div className="project-name">5-Day Weather Dashboard to see the weather of any City.
-                    This App helps to save data on licalStorage and revisit your previous searches as easy to click buttons.
+                    This App helps to save data on local-storage and revisit previous searches as easy to click buttons.
                     <hr />
                       <p className="project-tech">Technology Used:</p>
                       <div className="row">
@@ -175,7 +175,7 @@ class Code extends Component {
                     alt="Eat-da-Burger" />
                   <div className="portfolio-box-caption">
                     <div className="project-category text-white-50">&#9758; Demo: Eat da Burger App</div>
-                    <hr className="divider my-4" />
+                    {/* <hr className="divider my-4" /> */}
 
                     <div className="project-name">It is a restaurant App that lets users input the names of the burgers they'd like the eat.
                     it will generate under the to be eaten heading. User can Devour that burger by clicking on it.</div>
@@ -252,12 +252,8 @@ class Code extends Component {
                   <img src={require("../assets/employee-directory.png")} className="card-img-top img-fluid az2" />
                   <div className="card-block">
                     <h4 className=" text-white-50">Employee Directory</h4>
-                    <p className="ml-2 mb-2 text-justify mr-2">The Employee Directory
-                    application will allow users to view employee data. The
-                    employee can filter or search the other employee's details. The user can
-                    search the employee by their first name, last name, city, and sate. The
-                    filter functionality allows users to filter employees by their first name,
-                    last name, state, and city.
+                    <p className="ml-2 mb-2 text-justify mr-2">
+                    This app utilizes an API to populate random users and then create a directory. App Users can filter or search for employee's details by "Name" and also organize each field by (their Name, Last name, Email, DOB, Phone Number) in ascending or descending order. This application helps user to view their entire employee directory at once so that they can have quick access to their information.                    
                     </p>
                   </div>
                 </div>
@@ -341,7 +337,7 @@ class Code extends Component {
               </div><hr className="divider1" />
             </div>
 
-            {/* project:2 flip style*/}
+            {/* project:3 flip style*/}
             <div className="col-lg-4 col-md-6 col-sm-12 card-container">
               <div className="card-flip">
                 <div className="card front">
