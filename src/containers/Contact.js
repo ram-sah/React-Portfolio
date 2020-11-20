@@ -58,10 +58,10 @@ class Contact extends Component {
           <div className="row">
             <div className="phoneMargin col-lg-6 text-center mb-5 mb-lg-0">
               <i className="phoneSize">{"\uD83D\uDCF1"}</i>
-              <div>  +1 (484) 639-9591</div>
+              <div> <a href="tel:4846399591"> +1 (484) 639-9591</a></div>
             </div>
             <div className="col-lg-4 mr-auto text-center">
-              <i className="hi mailSize fa fa-envelope fa-fw fa-2x"> </i>
+              <p className="hi mailSize fa fa-envelope fa-fw fa-2x"> </p>
               <div className="hi"> <a href="mailto:rsah1@asu.edu">rsah1@asu.edu</a></div>
             </div>
           </div>

@@ -30,7 +30,7 @@ const HeaderDiv = styled.div`
 const NavLink = styled(Link)`
   display: inline-flex;
   margin: 5px 10px;
-  color: #6a34b0;
+  color: #146b15;
   font-size: 38px;
   @media (max-width: 600px) {   
     font-size: 30px;

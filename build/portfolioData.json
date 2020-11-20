@@ -1,0 +1,101 @@
+{
+  "main": {
+    "headline":"Full Stack Web Developer ∙ ",
+    "name":"Ram Sah",
+    "description":"\"Embracing technology enhances your business.\"",
+    "image":"ram.jpg",
+    "bio":"Hello World! Welcome to my portfolio!",
+    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "email": "rsah1@asu.edu",
+    "phone": "484-639-9591",
+    "github":"https://github.com/ram-sah",
+   
+    "address":{
+      "street":"(Your Street)",
+      "city":"West Chester",
+      "state":"PA",
+      "zip": "19380"
+    },
+    "website": "https://github.com/ram-sah",
+    "resumedownload":"./resume.pdf",
+    "social":[
+      {
+        "name":"github",
+        "url":"https://github.com/ram-sah",
+        "target": "_blank",
+        "className":"fa fa-github"
+      },
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/ram-sah",
+        "target": "_blank",
+        "className":"fa fa-linkedin"
+      },
+      
+      
+      {
+        "name":"twitter",
+        "url":"https://twitter.com/mohan2036",
+        "target": "_blank",
+        "className":"fa fa-twitter"
+      }
+    ]
+  },
+  
+  "portfolio":{
+    "projects": [
+      {
+        "title":"Weather-Dashboard",
+        "explain":"5-Day Weather Dashboard to see the weather of any City. This App helps to save data on local-storage and revisit previous searches as easy to click buttons.",
+        "image":"burger.gif",
+        "url":"https://ram-sah.github.io/Weather-Dashboard",
+        "repourl":"https://github.com/ram-sah/Weather-Dashboard"
+      },
+      {
+        "title":"Eat-da-Burger",
+        "explain":"A Command-line Application for Resturant Service that lets users input the names of the burgers they'd like the eat. it will generate under the to be eaten heading. User can Devour that burger by clicking on it",
+        "image":"burger.gif",
+        "url":"https://damp-brushlands-54954.herokuapp.com/",
+        "repourl":"https://github.com/ram-sah/eat-da-burger"
+      },
+      {
+        "title":"Google Search Books",
+        "explain":"This App utilizes React lifecycle methods to query and display books based on user searches, and uses MongoDB so that users can save books to review or purchase later.",
+        "image":"Google Search Books",
+        "url":"https://google-book-search20.herokuapp.com",
+        "repourl":"https://github.com/ram-sah/Google-Books-Search-React"
+      },
+           
+      {
+        "title":"Find Adoption Center App",
+        "explain":"Find a Dog Adoption Center to Your Nearest Location !",
+        "image":"pets.jpg",
+        "url":"https://cmanthou.github.io/PENN-Project-1/",
+        "repourl":"https://github.com/cmanthou/PENN-Project-1"
+      },         
+              
+      {
+        "title":"Employee Directory",
+        "explain":" This app utilizes an API to populate random users and then create a directory. App Users can filter or search for employee's details by Name and also organize each field by (their Name, Last name, Email, DOB, Phone Number) in ascending or descending order. This application helps user to view their entire employee directory at once so that they can have quick access to their information.",
+        "image":"Employee-directory.png",
+        "url":"https://ram-sah.github.io/Employee-Directory",
+        "repourl":"https://github.com/ram-sah/Employee-Directory"
+      },
+
+      {
+        "title":"Wine 'A' Lot Management System",
+        "explain":" This Business Purpose project helps to keep track the inventory and sales information. This Application is a simple reporting dashboard to quickly visualize historical sales data and make data driven decisions. Users can easily find the Slow or fast movement of their products also Slaes Margin, profit and loss in their business.",
+        "image":"project-2.png",
+        "url":"https://project-2-group1.herokuapp.com",
+        "repourl":"https://github.com/ram-sah/Project-2"
+      }, 
+      {
+        "title":"Veteran Discount App:",
+        "explain":" This is a Full Stack App with a database of all businesses that offer a Veterans discount, what that discount will be, a map with the closest location, and a scannable QRcode that eventually would be used to scan at the business of users choosing. Also, this App makes it easier to prove users Veteran status, Only Valid Veteran will be able to login.",
+        "image":"project-3.png",
+        "url":"https://vetdiscount.herokuapp.com",
+        "repourl":"https://github.com/ydoc118/project3"
+      }
+    ]
+  }
+}

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Header from './Header.js'
+// import Header from './Header.js'
 import Footer from './Footer.js'
+import Confetti from '../Confetti.js'
 
 export const ColorScheme = {
   primary: 'red',
@@ -43,7 +44,7 @@ class App extends Component {
 
       <div>
         <AppDiv>
-          <Header />
+          <Confetti />
           <ContainerDiv>
             {this.props.children}
           </ContainerDiv>
