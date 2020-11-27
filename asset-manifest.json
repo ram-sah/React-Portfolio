@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.0a2c979e.chunk.css",
-    "main.js": "/React-Portfolio/static/js/main.bb2cbf99.chunk.js",
-    "main.js.map": "/React-Portfolio/static/js/main.bb2cbf99.chunk.js.map",
+    "main.css": "/React-Portfolio/static/css/main.c086d8b6.chunk.css",
+    "main.js": "/React-Portfolio/static/js/main.53e39d02.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.53e39d02.chunk.js.map",
     "runtime-main.js": "/React-Portfolio/static/js/runtime-main.27e0f504.js",
     "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.27e0f504.js.map",
     "static/css/2.59bc9275.chunk.css": "/React-Portfolio/static/css/2.59bc9275.chunk.css",
     "static/js/2.7cef6eff.chunk.js": "/React-Portfolio/static/js/2.7cef6eff.chunk.js",
     "static/js/2.7cef6eff.chunk.js.map": "/React-Portfolio/static/js/2.7cef6eff.chunk.js.map",
     "index.html": "/React-Portfolio/index.html",
-    "precache-manifest.8044f0743d99be2f56c80a8e9a9fd73e.js": "/React-Portfolio/precache-manifest.8044f0743d99be2f56c80a8e9a9fd73e.js",
+    "precache-manifest.2d93fbbf5531a3ca77d4b744372be200.js": "/React-Portfolio/precache-manifest.2d93fbbf5531a3ca77d4b744372be200.js",
     "service-worker.js": "/React-Portfolio/service-worker.js",
     "static/css/2.59bc9275.chunk.css.map": "/React-Portfolio/static/css/2.59bc9275.chunk.css.map",
-    "static/css/main.0a2c979e.chunk.css.map": "/React-Portfolio/static/css/main.0a2c979e.chunk.css.map",
+    "static/css/main.c086d8b6.chunk.css.map": "/React-Portfolio/static/css/main.c086d8b6.chunk.css.map",
     "static/js/2.7cef6eff.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.7cef6eff.chunk.js.LICENSE.txt",
-    "static/media/RAM-resume.pdf": "/React-Portfolio/static/media/RAM-resume.f1e8c379.pdf",
+    "static/media/RAM-resume.pdf": "/React-Portfolio/static/media/RAM-resume.ea4e6c5b.pdf",
     "static/media/burger.gif": "/React-Portfolio/static/media/burger.3d0e31dd.gif",
     "static/media/employee-directory.png": "/React-Portfolio/static/media/employee-directory.61853f6a.png",
     "static/media/bootstrap.min.css": "/React-Portfolio/static/media/glyphicons-halflings-regular.fa277232.woff",
@@ -28,7 +28,7 @@
     "static/js/runtime-main.27e0f504.js",
     "static/css/2.59bc9275.chunk.css",
     "static/js/2.7cef6eff.chunk.js",
-    "static/css/main.0a2c979e.chunk.css",
-    "static/js/main.bb2cbf99.chunk.js"
+    "static/css/main.c086d8b6.chunk.css",
+    "static/js/main.53e39d02.chunk.js"
   ]
 }
