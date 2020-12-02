@@ -54,7 +54,7 @@
         "title":"Eat-da-Burger",
         "explain":"A Command-line Application for Resturant Service that lets users input the names of the burgers they'd like the eat. it will generate under the to be eaten heading. User can Devour that burger by clicking on it",
         "image":"burger.gif",
-        "url":"https://damp-brushlands-54954.herokuapp.com/",
+        "url":"https://da-burger20.herokuapp.com/",
         "repourl":"https://github.com/ram-sah/eat-da-burger"
       },
       {
