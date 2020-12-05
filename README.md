@@ -31,13 +31,13 @@
 
 [![Author: RAM](https://img.shields.io/badge/Author-RAM-gggddd.svg)](https://opensource.org/Author/RAM)
             
-* If you have any questions please contact me at: rsah1@asu.edu
+- If you have any questions please contact me at: rsah1@asu.edu
 ### GitHub Prifile: [ram-sah](https://github.com/ram-sah) 
 ### Repository : [React-Portfolio](https://github.com/ram-sah/React-Portfolio)
 ###  Linkedin Link : https://www.linkedin.com/in/ram-sah/
 ###  Portfolio Page Link : https://ram-sah.github.io/React-Portfolio/
 ###  Resume
-### Download My Resume : [Ram-Sah Resume.PDF](https://drive.google.com/file/d/1y1wmQMKGxqxu_oQLoNpidta4XrvCxc0a/view?usp=sharing)
+### Download My Resume : [Ram-Sah Resume.PDF](https://drive.google.com/file/d/1tz9-FStQ1TrnyoPzo26IgHUQSiETLa6z/view?usp=sharing)
 ### Heroku URL: [Click for live](https://ram-sah.herokuapp.com)
 
 ## Technology-Used
@@ -53,9 +53,3 @@
 * Large devices (desktops, 992px and up)
 * Extra large devices (Desktop, 1200px and up)
 * To Execute File: Open in browser
-
-
-
-
-  
-

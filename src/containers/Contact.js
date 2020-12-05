@@ -4,7 +4,7 @@ import { CenteredHeader, CenteredHeader1 } from './App.js'
 import "./Style.css";
 const FormDiv = styled.div`
   margin: 0 auto;
-  width: 50%;
+  width: 70%;
   @media (max-width: 1000px) {
     padding: 0px;
     width: 100%
@@ -35,11 +35,11 @@ class Contact extends Component {
           <form action="https://formspree.io/rsah1@asu.edu" method="POST" id="contactform">
             <div>
               <FormLabel>Name:</FormLabel>
-              <FormInput type="text" name="name" />
+              <FormInput placeholder="Ram Sah" type="text" name="name" />
             </div>
             <div>
               <FormLabel>Email:</FormLabel>
-              <FormInput type="text" name="_replyto" />
+              <FormInput type="text" name="_replyto" placeholder="rsah1@asu.edu" />
             </div>
             <div>
               <FormLabel>Comment:</FormLabel>
@@ -52,7 +52,7 @@ class Contact extends Component {
         <section>
           <CenteredHeader1>
            Need to reach out? Feel free to call or email me. 
-          <h3>Name: Ram Sah</h3><h3>West Chester, PA- 19380.</h3>
+          <h4>Name: Ram Sah</h4><h4>West Chester, PA- 19380.</h4>
           </CenteredHeader1>
 
           <div className="row">
@@ -62,7 +62,7 @@ class Contact extends Component {
             </div>
             <div className="col-lg-4 mr-auto text-center">
               <p className="hi mailSize fa fa-envelope fa-fw fa-2x"> </p>
-              <div className="hi"> <a href="mailto:rsah1@asu.edu">rsah1@asu.edu</a></div>
+              <div className="hi"> <a href="mailto:rsah1@asu.edu" target="_blank">rsah1@asu.edu</a></div>
             </div>
           </div>
         </section>

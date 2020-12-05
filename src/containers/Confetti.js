@@ -1,15 +1,14 @@
 import React, { useEffect, useState, useRef } from "react";
 import Confetti from "react-confetti";
-import Header from '../src/containers/Header'
+import Header from './Header'
 
 export default function Shapes() {
-  // const [height, setHeight] = useState(null);
   const [width, setWidth] = useState(null);
   const [show, setShow] = useState(false);
   const confettiRef = useRef(null);
 
   useEffect(() => {
-    // setHeight(confettiRef.current.clientHeight);
+
     setWidth(confettiRef.current.clientWidth);
   }, []);
 
@@ -27,7 +26,7 @@ export default function Shapes() {
         <Header />
         <Confetti
           recycle={show}
-          numberOfPieces={400}
+          numberOfPieces={50}
           width={width}
           height={500}
         />

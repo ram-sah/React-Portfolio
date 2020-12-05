@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import '../containers/Style.css';
+import './Style.css';
 import { ColorScheme } from "../theme/styleConstants";
 import { CenteredHeader } from "./App.js";
 
@@ -47,6 +47,13 @@ const UsedItem = styled.ul`
   font-size: 20px;
   font-weight: 800;
   letter-spacing: 0.5px;
+  animation: blinkingBackground 2s infinite;
+  @keyframes blinkingBackground{
+    0%		{ background-color: #10c018;}
+    25%		{ background-color: #1056c0;}
+    50%		{ background-color: #ef0a1a;}
+    75%		{ background-color: #254878;}
+    100%	{ background-color: #04a1d5;}
   @media (max-width: 600px) {   
   font-size: 16px;
   }
@@ -101,6 +108,7 @@ class Code extends Component {
                 <li>MySQL</li>
                 <li>MongoDB</li>
                 <li>Mongoose ODM</li>
+                <li>C#</li>
               </ul>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6">
@@ -135,8 +143,8 @@ class Code extends Component {
                   <img className="img-fluid az"  src={require("../assets/weather.jpg")}
                     alt="weather" />
                   <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">&#9758; Demo: Weather-Dashboard</div>
-                    <hr className="divider my-4" />
+                    <div className="project-category text-white-50">&#9758; Live-Demo: Weather-Dashboard</div>
+                    <hr className="divider2 my-4" />
                     <div className="project-name">5-Day Weather Dashboard to see the weather of any City.
                     This App helps to save data on local-storage and revisit previous searches as easy to click buttons.
                     <hr />
@@ -170,12 +178,12 @@ class Code extends Component {
               </div>
               {/* eat sa burger */}
               <div className="col-lg-4 col-md-6 col-sm-12">
-                <a className="portfolio-box" href="https://damp-brushlands-54954.herokuapp.com" target="_blank">
+                <a className="portfolio-box" href="https://da-burger20.herokuapp.com/" target="_blank">
                   <img className="img-fluid az"  src={require("../assets/burger.gif")}
                     alt="Eat-da-Burger" />
                   <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">&#9758; Demo: Eat da Burger App</div>
-                    {/* <hr className="divider my-4" /> */}
+                    <div className="project-category text-white-50">&#9758; Live-Demo: Eat da Burger App</div>
+                    <hr className="divider2 my-4" />
 
                     <div className="project-name">It is a restaurant App that lets users input the names of the burgers they'd like the eat.
                     it will generate under the to be eaten heading. User can Devour that burger by clicking on it.</div>
@@ -213,8 +221,8 @@ class Code extends Component {
                   <img className="img-fluid az"  src={require("../assets/google-Book.png")}
                     alt="Google-Book" />
                   <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">&#9758; Demo: Google-Book-Search</div>
-                    <hr className="divider my-4" />
+                    <div className="project-category text-white-50">&#9758; Live-Demo: Google-Book-Search</div>
+                    <hr className="divider2 my-4" />
                     <div className="project-name">This App utilizes React lifecycle methods to query and
                     display books based on user searches, and uses MongoDB so that users can save books to review or purchase later.</div>
                     <hr />
@@ -226,7 +234,7 @@ class Code extends Component {
                           <li>Node</li>
                           <li>ReactJs</li>
                           <li>Ajax</li>
-                          <li>Bootstrap</li>
+                          <li>Bootstrap, CSS</li>
                         </ul>
                       </div>
                       <div className="column">

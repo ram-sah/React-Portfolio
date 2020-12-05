@@ -3,18 +3,23 @@ import { Link } from 'react-router'
 import styled from 'styled-components';
 import Pdf from '../assets/RAM-resume.pdf';
 import Nav from './Nav.js'
-import Animate from '../Animate.js'
+import Animate from './Animate.js'
+import './Style.css'
 
 const ProfileImage = styled.img`
   width: 8em;
   height: 9em;
   border-radius: 50%;
-  margin-top: -40px;
+  margin-top: -70px;
+  border: 2px solid #293;
+  @media (max-width: 600px) {   
+    margin-top: -20px;
+    }   
 `;
 
 const ProfileTitle = styled.h1`
   color: white;
-  font-family: cursive;
+  font-family: cursive,Times, serif;
   font-weight: bolder;
   padding-top: 2%; 
   
@@ -34,7 +39,7 @@ const NavLink = styled(Link)`
   font-size: 38px;
   @media (max-width: 600px) {   
     font-size: 30px;
-    }
+    }   
 `
 class Header extends Component {
   render() {
@@ -43,7 +48,7 @@ class Header extends Component {
         <Nav />
       <HeaderDiv>
         <Link to="/">
-          <ProfileImage src={require('../assets/ram.jpg')} alt='Ram Sah' />  
+          <ProfileImage className='img' src={require('../assets/ram.jpg')} alt='Ram Sah' />  
           <ProfileTitle><Animate /></ProfileTitle>   
           <hr className="divider my-4" /> 
         </Link>

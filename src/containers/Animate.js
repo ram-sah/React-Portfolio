@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../../src/App.css';
 import Typical from 'react-typical';
 function Animate() {
   return (
@@ -13,9 +13,7 @@ function Animate() {
             'FULL-STACK DEVELOPER',
             5500,
             '"SOFTWARE ENGINEER"',
-            6500,
-            '"WEB DESIGNER"',
-            2000
+            6500
           ]}
         />
       </div>

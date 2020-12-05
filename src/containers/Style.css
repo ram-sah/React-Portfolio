@@ -147,7 +147,8 @@ figure.aboutMe {
   text-align: justify;
   color: inherit;
   font-size: 20px;
-  font-weight: bold;    
+  font-weight: bold;
+  text-indent: 50px;    
 }
 .skills {
   margin-right: -10%!important;  
@@ -208,6 +209,12 @@ figure.aboutMe {
 hr.divider {
   max-width: 3.25rem;
   border-width: 0.2rem;
+  border-color: #f4623a;
+}
+hr.divider2 {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  margin: 5px;
   border-color: #f4623a;
 }
 
@@ -867,15 +874,43 @@ hr.divider1 {
   border-color: #f4623a;
 }
 
-/* #hero {
-  width: 100%;
-  height: 100vh;
-  background: url("../img/portfolio/pic.jpg") top center;
-  background-size: cover;
-} */
-
 .column {
   display: block;
   margin-left: 5rem;
   font-size: 1.4rem;
+}
+
+.blink-bg{
+  color: #000;
+  font-weight: bold;
+  font-size: 40px;
+  animation: blinkingText 2s infinite;
+  margin-left: 8%;
+  
+}
+@keyframes blinkingText{
+  0%		{ color: #0a1af5;}
+  20%		{ color: #d8d10c;}
+  40%		{ color: #ef0a1a;}
+  60%		{ color: #f8fafc;}
+  80%	  { color: #3aeb0e;} 
+  100%  { color: #eb0eeb;}
+}
+.img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }

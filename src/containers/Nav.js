@@ -1,12 +1,13 @@
 import React from 'react';
+import './Style.css'
 function Nav() {
     return(
-        <nav>
-            <a style={{ fontSize:'40px', margin: '8%',color: 'white' }}
+        <div >
+            <a className='blink-bg'
              href="#">                
                RAM SAH
             </a>            
-        </nav>
+        </div>
     );
 }
 

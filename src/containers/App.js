@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 // import Header from './Header.js'
 import Footer from './Footer.js'
-import Confetti from '../Confetti.js'
+import Confetti from './Confetti.js'
 
 export const ColorScheme = {
   primary: 'red',
@@ -22,7 +22,16 @@ const AppDiv = styled.div`
 export const CenteredHeader = styled.h2`
   text-align: center;
   margin-top: 2em;
+  animation: blinkingText 2s infinite;
+  @keyframes blinkingText{
+    0%		{ color: #0a1af5;}   
+    25%		{ color: #ef0a1a;}
+    50%		{ color: #f8fafc;}
+    75%	  { color: #155007;} 
+    100%  { color: #eb0eeb;}
+  }
 `
+
 export const CenteredHeader1 = styled.h3`
   text-align: center;
   margin-top: 1em;
