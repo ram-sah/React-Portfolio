@@ -27,7 +27,7 @@
 
 ## Questions
             
-<img src="https://github.com/ram-sah.png" alt="avatar" style="border-radius: 30px" width="60" />
+<img src="https://github.com/ram-sah.png" alt="avatar" style="border-radius: 70px" width="140" />
 
 [![Author: RAM](https://img.shields.io/badge/Author-RAM-gggddd.svg)](https://opensource.org/Author/RAM)
             
