@@ -888,6 +888,9 @@ hr.divider1 {
   margin-left: 8%;
   
 }
+.blink-bg:hover {
+  text-decoration: none;
+}
 @keyframes blinkingText{
   0%		{ color: #0a1af5;}
   20%		{ color: #d8d10c;}

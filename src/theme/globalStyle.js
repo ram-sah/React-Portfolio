@@ -28,6 +28,7 @@ injectGlobal`
     &:hover {
       text-decoration: none;
       color: ${ColorScheme.primary};
+      transform: scale(1.15);      
     }
     &:focus {
       text-decoration: none;
