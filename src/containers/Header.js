@@ -44,7 +44,7 @@ const NavLink = styled(Link)`
     font-size: 30px;
   }   
   &:hover {    
-    transform: scale(1.15);    
+    transform: scale(1.15)!important;    
   }
 `
 class Header extends Component {
