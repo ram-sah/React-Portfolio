@@ -3,6 +3,8 @@ import styled from "styled-components";
 import './Style.css';
 import { ColorScheme } from "../theme/styleConstants";
 import { CenteredHeader } from "./App.js";
+// Zoom-out
+import Zoom from 'react-reveal/Zoom';
 
 export const PortButton = styled.a`
   padding: 10px;
@@ -81,7 +83,8 @@ class Code extends Component {
   render() {
     return (
       <div>
-        <div className='portfolioPg'>
+        <Zoom>
+          <div className='portfolioPg'>
           <Skill>Skills:</Skill>
           <hr className="divider my-4" />
           <div className="row skills">
@@ -133,6 +136,7 @@ class Code extends Component {
             </div>
           </div>
         </div>
+        </Zoom>
         <Skill>My Project Work:</Skill>
         <hr className="divider my-4" />
         <div className="portfolio1" id="portfolio">

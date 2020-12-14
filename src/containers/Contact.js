@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { CenteredHeader, CenteredHeader1 } from './App.js'
 import "./Style.css";
+// Slide-left
+import Slide from 'react-reveal/Slide';
+
 const FormDiv = styled.div`
   margin: 0 auto;
   width: 70%;
@@ -28,6 +31,7 @@ class Contact extends Component {
 
   render() {
     return (
+      <Slide right>
       <div className='contactPg'>
         <CenteredHeader><strong>Let's Get in Touch!</strong></CenteredHeader>
         <hr className="divider my-4" />
@@ -67,6 +71,7 @@ class Contact extends Component {
           </div>
         </section>
       </div>
+      </Slide>
     );
   }
 }

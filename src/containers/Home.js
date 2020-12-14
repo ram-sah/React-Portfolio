@@ -2,10 +2,14 @@ import React, { Component } from 'react'
 import { CenteredHeader1, CenteredHeader} from './App.js'
 import '../theme/globalStyle'
 import './Style.css'
+// Bounce Animation
+import Bounce from 'react-reveal/Bounce';
+
 class Home extends Component {
   render() {
     return (
-      // <section style={ {width: "1000px" }}></section>     
+      // <section style={ {width: "1000px" }}></section> 
+      <Bounce >    
       <div className='cardMain'> 
         <CenteredHeader> <strong> WELCOME !</strong> </CenteredHeader>
         <hr className="divider my-4" />
@@ -20,7 +24,8 @@ class Home extends Component {
         Git, Nodejs, Node Express, ReactJs, Handlebars, MySql, MongoDB, Redux, Heroku, GitHub.
         I've a Bachelor Degree in Mathematics and Masters Degree in Social Science from <a href="http://www.tribhuvan-university.edu.np/" target="_blank">Tribhuvan University </a>, Nepal in 2008.
         </div>
-      </div>          
+      </div>
+      </Bounce>
     );
   }
 }

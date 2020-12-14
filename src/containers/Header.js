@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import { Link } from 'react-router'
 import styled from 'styled-components';
 import Pdf from '../assets/RAM-resume.pdf';
-import Nav from './Nav.js'
-import Animate from './Animate.js'
-import './Style.css'
+import Nav from './Nav.js';
+import Animate from './Animate.js';
+import './Style.css';
+import { ColorScheme } from "../theme/styleConstants";
+// Zoom-out
+import Zoom from 'react-reveal/Zoom';
 
 const ProfileImage = styled.img`
   width: 8em;
@@ -29,7 +32,7 @@ const HeaderDiv = styled.div`
   padding-top: 5vh;
   text-align: center;
   font-family: 'Zilla Slab Highlight', sans-serif;
-  color: black;
+   
 `;
 
 const NavLink = styled(Link)`
@@ -39,13 +42,17 @@ const NavLink = styled(Link)`
   font-size: 38px;
   @media (max-width: 600px) {   
     font-size: 30px;
-    }   
+  }   
+  &:hover {    
+    transform: scale(1.15);    
+  }
 `
 class Header extends Component {
   render() {
     return (
       <figure className="aboutMe">
-        <Nav />
+      <Zoom>
+      <Nav />
       <HeaderDiv>
         <Link to="/">
           <ProfileImage className='img' src={require('../assets/ram.jpg')} alt='Ram Sah' />  
@@ -60,6 +67,7 @@ class Header extends Component {
         </div>
         <hr />
       </HeaderDiv>
+      </Zoom> 
       </figure>
     );
   }

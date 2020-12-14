@@ -3,14 +3,13 @@ import Confetti from "react-confetti";
 import Header from './Header'
 
 export default function Shapes() {
-  const [width, setWidth] = useState(null);
+  // const [width, setWidth] = useState(null);
   const [show, setShow] = useState(false);
   const confettiRef = useRef(null);
 
-  useEffect(() => {
-
-    setWidth(confettiRef.current.clientWidth);
-  }, []);
+  // useEffect(() => {
+  //   setWidth(confettiRef.current.clientWidth);
+  // }, []);
 
   const handleShow = (toggle) => {
     setShow(toggle);
@@ -26,8 +25,8 @@ export default function Shapes() {
         <Header />
         <Confetti
           recycle={show}
-          numberOfPieces={50}
-          width={width}
+          numberOfPieces={150}
+          width={320}
           height={500}
         />
       </div>
