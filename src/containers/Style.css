@@ -39,7 +39,7 @@
   opacity: 0;
   color: #fff;
   background: limegreen;
-  transition: opacity 0.25s ease;
+  transition: opacity 1.25s ease;
   text-align: center;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category {
@@ -755,6 +755,7 @@ hr.divider2 {
 .card {
   background: #dfb8b8;
   margin: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
 }
 
 /* Flip Cards CSS */

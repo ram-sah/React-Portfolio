@@ -5,7 +5,7 @@ import Pdf from '../assets/RAM-resume.pdf';
 import Nav from './Nav.js';
 import Animate from './Animate.js';
 import './Style.css';
-import { ColorScheme } from "../theme/styleConstants";
+// import { ColorScheme } from "../theme/styleConstants";
 // Zoom-out
 import Zoom from 'react-reveal/Zoom';
 
@@ -44,7 +44,7 @@ const NavLink = styled(Link)`
     font-size: 30px;
   }   
   &:hover {    
-    transform: scale(1.15)   
+    transform: scale(1.15)!important
   }
 `
 class Header extends Component {
