@@ -717,6 +717,13 @@ hr.divider2 {
   }
 }
 
+@media (max-width: 1200px) {
+  .text-justify {
+    padding: 1rem!important;
+    font-size: 1.7rem;
+  }
+}
+
 @media (max-width: 1091px) {
   .az {
     width:650px!important;
@@ -736,6 +743,13 @@ hr.divider2 {
     width: 90%!important;
     margin-left: 5%!important;
   } 
+  .text-justify {
+    padding: 2rem!important;
+    font-size: 2.2rem!important;
+  }
+  .text-white-50 {
+    font-size: 2.4rem;   
+  }
 }
 
 @media (max-width: 400px) { 
@@ -749,8 +763,16 @@ hr.divider2 {
   .home {
     line-height: 1.7;    
     font-size: 1.7rem!important; 
+  } 
+}
+@media (max-width: 560px) {
+  .text-justify {
+    padding: 1rem!important;
+    font-size: 1.8rem!important;
   }
- 
+  .text-white-50 {
+    font-size: 2rem;   
+  }
 }
 .card {
   background: #dfb8b8;

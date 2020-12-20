@@ -53,7 +53,7 @@ const UsedItem = styled.ul`
   @keyframes blinkingBackground{
     0%		{ background-color: #10c018;}
     25%		{ background-color: #1056c0;}
-    50%		{ background-color: #ef0a1a;}
+    50%		{ background-color: #881e1c;}
     75%		{ background-color: #254878;}
     100%	{ background-color: #04a1d5;}
   @media (max-width: 600px) {   
@@ -265,7 +265,7 @@ class Code extends Component {
                   <div className="card-block">
                     <h4 className=" text-white-50">Employee Directory</h4>
                     <p className="ml-2 mb-2 text-justify mr-2">
-                    This app utilizes an API to populate random users and then create a directory. App Users can filter or search for employee's details by "Name" and also organize each field by (their Name, Last name, Email, DOB, Phone Number) in ascending or descending order. This application helps user to view their entire employee directory at once so that they can have quick access to their information.                    
+                    This app utilizes an API to populate random users and then create a directory. Users can filter or search for employee's details by "Name" and also organize each field by (Name, Last name, Email, DOB, Phone) in ascending or descending order. This App helps user to view their entire employee directory at once so that they can have quick access to their information.                    
                     </p>
                   </div>
                 </div>
@@ -372,7 +372,6 @@ class Code extends Component {
                     <hr className="divider my-4" />
                     <ul className="card-text">
                       <li>ReactJs</li>
-                      <li>React-router-dom</li>
                       <li>JavaScript</li>
                       <li>jQuery</li>
                       <li>Express</li>
