@@ -90,7 +90,7 @@ injectGlobal`
       margin: 0px;
     }
     .portfolio1 {
-      padding:12px;
+      padding:2px 9px 2px 11px;
       margin: 0px;
     }
     .aaz {      
@@ -98,6 +98,9 @@ injectGlobal`
      }
     .home {
       font-size: 20px;
+    }
+    .row {
+      margin-right: -7px!important;
     }
   }
   html,body{

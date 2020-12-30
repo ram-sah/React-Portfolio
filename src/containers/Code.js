@@ -85,57 +85,56 @@ class Code extends Component {
       <div>
         <Zoom>
           <div className='portfolioPg'>
-          <Skill>Skills:</Skill>
-          <hr className="divider my-4" />
-          <div className="row skills">
-            <div className="col-lg-3 col-md-6 col-sm-6">
-              <h3><UsedItem>Front-end:</UsedItem></h3>
-              <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Bootstrap</li>
-                <li>JavaScript (ES6)</li>
-                <li>ReactJs</li>
-                <li>Redux</li>
-                <li>AJAX</li>
-                <li>JSON</li>
-                <li>jQuery</li>
-                <li>Handlebars</li>
-              </ul>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-6">
-              <h3><UsedItem>Back-end:</UsedItem></h3>
-              <ul>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>MySQL</li>
-                <li>MongoDB</li>
-                <li>Mongoose ODM</li>
-                <li>C#</li>
-              </ul>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-6">
-              <h3><UsedItem>Server Side:</UsedItem></h3>
-              <ul>
-                <li>Templating Engines</li>
-                <li>Creating APIs</li>
-                <li>User Authentication</li>
-                <li>ORM (Sequelize)</li>
-                <li>MVC</li>
-              </ul>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-6">
-              <h3><UsedItem>Other:</UsedItem></h3>
-              <ul>
-                <li>Git Hub</li>
-                <li>Webpack</li>
-                <li>Data Structures</li>
-                <li>Algorithms</li>
-                <li>Heroku</li>
-              </ul>
+            <Skill>Skills:</Skill>
+            <hr className="divider my-4" />
+            <div className="row skills">
+              <div className="col-lg-3 col-md-6 col-sm-6">
+                <h3><UsedItem>Front-end:</UsedItem></h3>
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Bootstrap</li>
+                  <li>JavaScript (ES6)</li>
+                  <li>ReactJs</li>
+                  <li>Redux</li>
+                  <li>AJAX</li>
+                  <li>JSON</li>
+                  <li>jQuery</li>
+                  <li>Handlebars</li>
+                </ul>
+              </div>
+              <div className="col-lg-3 col-md-6 col-sm-6">
+                <h3><UsedItem>Back-end:</UsedItem></h3>
+                <ul>
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                  <li>MySQL</li>
+                  <li>MongoDB</li>
+                  <li>Mongoose ODM</li>
+                </ul>
+              </div>
+              <div className="col-lg-3 col-md-6 col-sm-6">
+                <h3><UsedItem>Server Side:</UsedItem></h3>
+                <ul>
+                  <li>Templating Engines</li>
+                  <li>Creating APIs</li>
+                  <li>User Authentication</li>
+                  <li>ORM (Sequelize)</li>
+                  <li>MVC</li>
+                </ul>
+              </div>
+              <div className="col-lg-3 col-md-6 col-sm-6">
+                <h3><UsedItem>Other:</UsedItem></h3>
+                <ul>
+                  <li>Git Hub</li>
+                  <li>Webpack</li>
+                  <li>Data Structures</li>
+                  <li>Algorithms</li>
+                  <li>Heroku</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
         </Zoom>
         <Skill>My Project Work:</Skill>
         <hr className="divider my-4" />
@@ -144,14 +143,14 @@ class Code extends Component {
             <div className="row no-gutters">
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <a className="portfolio-box" href="https://ram-sah.github.io/Weather-Dashboard" target="_blank">
-                  <img className="img-fluid az"  src={require("../assets/weather.jpg")}
+                  <img className="img-fluid az" src={require("../assets/weather.jpg")}
                     alt="weather" />
                   <div className="portfolio-box-caption">
                     <div className="project-category text-white-50">&#9758; Live-Demo: Weather-Dashboard</div>
                     <hr className="divider2 my-4" />
                     <div className="project-name">5-Day Weather Dashboard to see the weather of any City.
-                    This App helps to save data on local-storage and revisit previous searches as easy to click buttons.
-                    <hr />
+                      This App helps to save data on local-storage and revisit previous searches as easy to click buttons.
+                      <hr />
                       <p className="project-tech">Technology Used:</p>
                       <div className="row">
                         <div className="column">
@@ -183,7 +182,7 @@ class Code extends Component {
               {/* eat sa burger */}
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <a className="portfolio-box" href="https://da-burger20.herokuapp.com/" target="_blank">
-                  <img className="img-fluid az"  src={require("../assets/burger.gif")}
+                  <img className="img-fluid az" src={require("../assets/burger.gif")}
                     alt="Eat-da-Burger" />
                   <div className="portfolio-box-caption">
                     <div className="project-category text-white-50">&#9758; Live-Demo: Eat da Burger App</div>
@@ -191,7 +190,7 @@ class Code extends Component {
 
                     <div className="project-name">It is a restaurant App that lets users input the names of the burgers they'd like the eat.
                     it will generate under the to be eaten heading. User can Devour that burger by clicking on it.</div>
-                    <hr />
+                    <hr className="line" />
                     <p className="project-tech">Technology Used:</p>
                     <div className="row">
                       <div className="column">
@@ -222,14 +221,14 @@ class Code extends Component {
               {/* Google Book Search */}
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <a className="portfolio-box" href="https://google-book-search20.herokuapp.com" target="_blank">
-                  <img className="img-fluid az"  src={require("../assets/google-Book.png")}
+                  <img className="img-fluid az" src={require("../assets/google-Book.png")}
                     alt="Google-Book" />
                   <div className="portfolio-box-caption">
                     <div className="project-category text-white-50">&#9758; Live-Demo: Google-Book-Search</div>
                     <hr className="divider2 my-4" />
                     <div className="project-name">This App utilizes React lifecycle methods to query and
                     display books based on user searches, and uses MongoDB so that users can save books to review or purchase later.</div>
-                    <hr />
+                    <hr className="line" />
                     <p className="project-tech">Technology Used:</p>
                     <div className="row">
                       <div className="column">
@@ -257,146 +256,146 @@ class Code extends Component {
                   className="fa fa-github fa-fw fa-2x cEZFfJ aaz"></i>
                 </a>
               </div>
-            {/* Flip card styles Start-1*/}
-            <div className="col-lg-4 col-md-6 col-sm-12 card-container">
-              <div className="card-flip">
-                <div className="card front">
-                  <img src={require("../assets/employee-directory.png")} className="card-img-top img-fluid az2" />
-                  <div className="card-block">
-                    <h4 className=" text-white-50">Employee Directory</h4>
-                    <p className="ml-2 mb-2 text-justify mr-2">
-                    This app utilizes an API to populate random users and then create a directory. Users can filter or search for employee's details by "Name" and also organize each field by (Name, Last name, Email, DOB, Phone) in ascending or descending order. This App helps user to view their entire employee directory at once so that they can have quick access to their information.                    
+              {/* Flip card styles Start-1*/}
+              <div className="col-lg-4 col-md-6 col-sm-12 card-container">
+                <div className="card-flip">
+                  <div className="card front">
+                    <img src={require("../assets/employee-directory.png")} className="card-img-top img-fluid az2" />
+                    <div className="card-block">
+                      <h4 className=" text-white-50">Employee Directory</h4>
+                      <p className="ml-2 mb-2 text-justify mr-2">
+                        This app utilizes an API to populate random users and then create a directory. Users can filter or search for employee's details by "Name" and also organize each field by (Name, Last name, Email, DOB, Phone) in ascending or descending order. This App helps user to view their entire employee directory at once so that they can have quick access to their information.
                     </p>
+                    </div>
                   </div>
-                </div>
-                {/* <!-- Card 2 Back --> */}
-                <div className="card back">
-                  <div className="card-header text-dark text-white-50">
-                    <strong>Front-end Application</strong>
+                  {/* <!-- Card 2 Back --> */}
+                  <div className="card back">
+                    <div className="card-header text-dark text-white-50">
+                      <strong>Front-end Application</strong>
+                    </div>
+                    <div className="card-block">
+                      <h6 className=" mt-2 text-white-50 text-dark">Technologies Used</h6>
+                      <hr className="divider my-4" />
+                      <ul className="card-text">
+                        <li>React.js</li>
+                        <li>React-Bootstrap</li>
+                        <li>React-router-dom</li>
+                        <li>React-scripts</li>
+                        <li>NodeJs</li>
+                        <li>JavaScript</li>
+                        <li>CSS3</li>
+                        <li>JSX</li>
+                        <li>Axios</li>
+                        <li>API</li>
+                        <li>Moment</li>
+                        <li>Font Awesome</li>
+                        <li>Gh-pages</li>
+                      </ul>
+                      <a href="https://github.com/ram-sah/Employee-Directory" target="_blank"
+                      ><PortButton>GitHub Repo</PortButton></a>
+                      <a href="https://ram-sah.github.io/Employee-Directory"
+                        target="_blank"><PortButton>Project URL</PortButton> </a>
+                    </div>
                   </div>
-                  <div className="card-block">
-                    <h6 className=" mt-2 text-white-50 text-dark">Technologies Used</h6>
-                    <hr className="divider my-4" />
-                    <ul className="card-text">
-                      <li>React.js</li>
-                      <li>React-Bootstrap</li>
-                      <li>React-router-dom</li>
-                      <li>React-scripts</li>
-                      <li>NodeJs</li>
-                      <li>JavaScript</li>
-                      <li>CSS3</li>
-                      <li>JSX</li>
-                      <li>Axios</li>
-                      <li>API</li>
-                      <li>Moment</li>
-                      <li>Font Awesome</li>
-                      <li>Gh-pages</li>
-                    </ul>
-                    <a href="https://github.com/ram-sah/Employee-Directory" target="_blank"
-                    ><PortButton>GitHub Repo</PortButton></a>
-                    <a href="https://ram-sah.github.io/Employee-Directory"
-                      target="_blank"><PortButton>Project URL</PortButton> </a>
-                  </div>
-                </div>
-              </div><hr className="divider1" />
-            </div>
+                </div><hr className="divider1" />
+              </div>
 
-            {/* project:2 flip style*/}
-            <div className="col-lg-4 col-md-6 col-sm-12 card-container">
-              <div className="card-flip">
-                <div className="card front">
-                  <img src={require("../assets/project-2.png")} className="card-img-top img-fluid az2" />
-                  <div className="card-block">
-                    <h4 className=" text-white-50 mt-1">Wine 'A' Lot Management System</h4>
-                    <p className="ml-2 mb-2 text-justify mr-2">This Business Purpose project helps to keep track the inventory and sales information.
-                    This Application is a simple reporting dashboard to quickly visualize historical sales data and make data driven decisions.
-                    Users can easily find the Slow or fast movement of their products also Slaes Margin, profit and loss in their business.
+              {/* project:2 flip style*/}
+              <div className="col-lg-4 col-md-6 col-sm-12 card-container">
+                <div className="card-flip">
+                  <div className="card front">
+                    <img src={require("../assets/project-2.png")} className="card-img-top img-fluid az2" />
+                    <div className="card-block">
+                      <h4 className=" text-white-50 mt-1">Wine 'A' Lot Management System</h4>
+                      <p className="ml-2 mb-2 text-justify mr-2">This Business Purpose project helps to keep track the inventory and sales information.
+                      This Application is a simple reporting dashboard to quickly visualize historical sales data and make data driven decisions.
+                      Users can easily find the Slow or fast movement of their products also Slaes Margin, profit and loss in their business.
                 </p>
+                    </div>
                   </div>
-                </div>
-                {/* <!-- Card 2 Back --> */}
-                <div className="card back">
-                  <div className="card-header text-dark text-white-50">
-                    <strong>Project-2: Front/Back End Application</strong>
+                  {/* <!-- Card 2 Back --> */}
+                  <div className="card back">
+                    <div className="card-header text-dark text-white-50">
+                      <strong>Project-2: Front/Back End Application</strong>
+                    </div>
+                    <div className="card-block">
+                      <h4 className=" mt-2 text-white-50 text-dark">Technologies Used:</h4>
+                      <hr className="divider my-4" />
+                      <ul className="card-text">
+                        <li>Express-handlebars</li>
+                        <li>NodeJs</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>Express</li>
+                        <li>MySQL</li>
+                        <li>Migration</li>
+                        <li>Sequelize</li>
+                        <li>Sequelize-cli</li>
+                        <li>Moment</li>
+                        <li>Travis/ Eslint</li>
+                        <li>Amcharts</li>
+                        <li>Bootstrap</li>
+                        <li>CSS3</li>
+                        <li>JawsDB</li>
+                        <li>Heroku</li>
+                      </ul>
+                      <a href="https://github.com/ram-sah/Project-2" target="_blank"
+                      ><PortButton>GitHub Repo </PortButton></a>
+                      <a href="https://project-2-group1.herokuapp.com/7"
+                        target="_blank"><PortButton>Project URL </PortButton></a>
+                    </div>
                   </div>
-                  <div className="card-block">
-                    <h4 className=" mt-2 text-white-50 text-dark">Technologies Used:</h4>
-                    <hr className="divider my-4" />
-                    <ul className="card-text">
-                      <li>Express-handlebars</li>
-                      <li>NodeJs</li>
-                      <li>JavaScript</li>
-                      <li>jQuery</li>
-                      <li>Express</li>
-                      <li>MySQL</li>
-                      <li>Migration</li>
-                      <li>Sequelize</li>
-                      <li>Sequelize-cli</li>
-                      <li>Moment</li>
-                      <li>Travis/ Eslint</li>
-                      <li>Amcharts</li>
-                      <li>Bootstrap</li>
-                      <li>CSS3</li>
-                      <li>JawsDB</li>
-                      <li>Heroku</li>
-                    </ul>
-                    <a href="https://github.com/ram-sah/Project-2" target="_blank"
-                    ><PortButton>GitHub Repo </PortButton></a>
-                    <a href="https://project-2-group1.herokuapp.com/7"
-                      target="_blank"><PortButton>Project URL </PortButton></a>
-                  </div>
-                </div>
-              </div><hr className="divider1" />
-            </div>
+                </div><hr className="divider1" />
+              </div>
 
-            {/* project:3 flip style*/}
-            <div className="col-lg-4 col-md-6 col-sm-12 card-container">
-              <div className="card-flip">
-                <div className="card front">
-                  <img src={require("../assets/project-3.png")} className="card-img-top img-fluid az2" />
-                  <div className="card-block">
-                    <h4 className=" text-white-50 mt-1">Veteran Discount App:</h4>
-                    <p className="ml-2 mb-2 text-justify mr-2">This is a Full Stack App with a database of all businesses that offer a Veterans discount,
-                    what that discount will be, a map with the closest location, and a scannable QRcode that eventually would be used to
-                    scan at the business of users choosing. Also, this App makes it easier to prove users Veteran status, Only Valid Veteran will be able to login.
+              {/* project:3 flip style*/}
+              <div className="col-lg-4 col-md-6 col-sm-12 card-container">
+                <div className="card-flip">
+                  <div className="card front">
+                    <img src={require("../assets/project-3.png")} className="card-img-top img-fluid az2" />
+                    <div className="card-block">
+                      <h4 className=" text-white-50 mt-1">Veteran Discount App:</h4>
+                      <p className="ml-2 mb-2 text-justify mr-2">This is a Full Stack App with a database of all businesses that offer a Veterans discount,
+                      what that discount will be, a map with the closest location, and a scannable QRcode that eventually would be used to
+                      scan at the business of users choosing. Also, this App makes it easier to prove users Veteran status, Only Valid Veteran will be able to login.
                 </p>
+                    </div>
                   </div>
-                </div>
-                {/* <!-- Card 2 Back --> */}
-                <div className="card back">
-                  <div className="card-header text-dark text-white-50">
-                    <strong>Project-3: Full Stack Web Application</strong>
+                  {/* <!-- Card 2 Back --> */}
+                  <div className="card back">
+                    <div className="card-header text-dark text-white-50">
+                      <strong>Project-3: Full Stack Web Application</strong>
+                    </div>
+                    <div className="card-block">
+                      <h4 className=" mt-2 text-white-50 text-dark">Technologies Used:</h4>
+                      <hr className="divider my-4" />
+                      <ul className="card-text">
+                        <li>ReactJs</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>Express</li>
+                        <li>Mongoose</li>
+                        <li>Yelp API</li>
+                        <li>Google Map API</li>
+                        <li>Axios</li>
+                        <li>Bcryptjs</li>
+                        <li>jsonwebtoken</li>
+                        <li>QRcode</li>
+                        <li>Travis</li>
+                        <li>Eslint</li>
+                        <li>React-google-maps</li>
+                        <li>CSS3/ Bootstrap</li>
+                        <li>MongoDB</li>
+                        <li>Heroku</li>
+                      </ul>
+                      <a href="https://github.com/ydoc118/project3" target="_blank"
+                      ><PortButton>GitHub Repo </PortButton></a>
+                      <a href="https://vetdiscount.herokuapp.com/"
+                        target="_blank"><PortButton>Project URL </PortButton></a>
+                    </div>
                   </div>
-                  <div className="card-block">
-                    <h4 className=" mt-2 text-white-50 text-dark">Technologies Used:</h4>
-                    <hr className="divider my-4" />
-                    <ul className="card-text">
-                      <li>ReactJs</li>
-                      <li>JavaScript</li>
-                      <li>jQuery</li>
-                      <li>Express</li>
-                      <li>Mongoose</li>
-                      <li>Yelp API</li>
-                      <li>Google Map API</li>
-                      <li>Axios</li>
-                      <li>Bcryptjs</li>
-                      <li>jsonwebtoken</li>
-                      <li>QRcode</li>
-                      <li>Travis</li>
-                      <li>Eslint</li>
-                      <li>React-google-maps</li>
-                      <li>CSS3/ Bootstrap</li>
-                      <li>MongoDB</li>
-                      <li>Heroku</li>
-                    </ul>
-                    <a href="https://github.com/ydoc118/project3" target="_blank"
-                    ><PortButton>GitHub Repo </PortButton></a>
-                    <a href="https://vetdiscount.herokuapp.com/"
-                      target="_blank"><PortButton>Project URL </PortButton></a>
-                  </div>
-                </div>
-              </div><hr className="divider1" />
-            </div>
+                </div><hr className="divider1" />
+              </div>
 
             </div>
 

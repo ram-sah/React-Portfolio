@@ -50,13 +50,14 @@
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name {
   font-size: 1.4rem;
+  padding: 5px;
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
 .project-tech {
   font-size: 1.4rem;
-  color: #7808ef;
+  color: #7808ef; 
 }
 .text-white-75 {
   color: var(--white) !important;
@@ -217,7 +218,9 @@ hr.divider2 {
   margin: 5px;
   border-color: #f4623a;
 }
-
+hr.line {
+  margin: 8px;
+}
 @media (min-width: 576px) {
   .col-sm {
     text-align: center;
@@ -439,7 +442,7 @@ hr.divider2 {
     min-width: 0;
     max-width: 100%;
   }
-
+  
   .row-cols-md-1 > * {
     flex: 0 0 100%;
     max-width: 100%;
@@ -715,6 +718,9 @@ hr.divider2 {
     flex: 0 0 50%;
     max-width: 50%;
   }
+  .text-white-50 {
+    font-size: 1.5rem;   
+  }
 }
 
 @media (max-width: 1200px) {
@@ -750,12 +756,16 @@ hr.divider2 {
   .text-white-50 {
     font-size: 2.4rem;   
   }
+  .project-name {
+    font-size: 2rem!important;
+    line-height: 1.9;
+  }
 }
 
 @media (max-width: 400px) { 
   .row {
-    width: 109%!important;
-    margin-left:-5%!important;
+    width: auto!important;
+    margin-left:-4%!important;
   }
   .front {   
     height: 575px!important;   
@@ -763,7 +773,8 @@ hr.divider2 {
   .home {
     line-height: 1.7;    
     font-size: 1.7rem!important; 
-  } 
+  }  
+  
 }
 @media (max-width: 560px) {
   .text-justify {
@@ -771,8 +782,14 @@ hr.divider2 {
     font-size: 1.8rem!important;
   }
   .text-white-50 {
-    font-size: 2rem;   
+    font-size: 1.7rem;   
   }
+  .project-name {
+    font-size: 1.4rem!important;
+    padding: 10px!important;
+    line-height: normal;
+  }
+  
 }
 .card {
   background: #dfb8b8;
