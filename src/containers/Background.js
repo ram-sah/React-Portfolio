@@ -5,18 +5,18 @@ import "./Background.scss";
 const Background = () => {
   return (
     <Particles
-      className="particles"
+      className="bubbles"
       params={{
         particles: {
           number: {
             value: 1200,
             density: {
               enable: true,
-              value_area: 889.1476416322727
+              value_area: 890
             }
           },
           color: {
-            value: "#00d4ff"
+            value: "#ffffff"
           },
           shape: {
             type: "circle",
@@ -34,22 +34,22 @@ const Background = () => {
             }
           },
           opacity: {
-            value: 0.48927153781200905,
+            value: 2,
             random: false,
             anim: {
               enable: true,
-              speed: 0.7,
+              speed: 0.1,
               opacity_min: 0,
               sync: false
             }
           },
           size: {
-            value: 1.5,
+            value: 1,
             random: true,
             anim: {
               enable: true,
               speed: 7,
-              size_min: 0,
+              size_min: 0.5,
               sync: false
             }
           },
@@ -57,13 +57,13 @@ const Background = () => {
             enable: false,
             distance: 150,
             color: "#ffffff",
-            opacity: 0.2,
+            opacity: 0.1,
             width: 1
           },
           move: {
             enable: true,
-            speed: 0.8,
-            direction: "none",
+            speed: 0.4,
+            direction: "top",
             random: true,
             straight: false,
             out_mode: "out",
@@ -96,7 +96,7 @@ const Background = () => {
               }
             },
             bubble: {
-              distance: 183.91608391608392,
+              distance: 190,
               size: 1.5,
               duration: 3,
               opacity: 1,

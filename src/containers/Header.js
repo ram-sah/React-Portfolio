@@ -5,6 +5,7 @@ import Pdf from '../assets/RAM-resume.pdf';
 import Nav from './Nav.js';
 import Animate from './Animate.js';
 import './Style.css';
+import Particles from './Background.js'
 // import { ColorScheme } from "../theme/styleConstants";
 // Zoom-out
 import Zoom from 'react-reveal/Zoom';
@@ -57,7 +58,7 @@ class Header extends Component {
         <Link to="/">
           <ProfileImage className='img' src={require('../assets/ram.jpg')} alt='Ram Sah' />  
           <ProfileTitle><Animate /></ProfileTitle>   
-          <hr className="divider my-4" /> 
+          <hr className="divider my-4" /> <Particles />
         </Link>
         <div>
           <NavLink to='/'>ABOUT</NavLink>
@@ -68,6 +69,7 @@ class Header extends Component {
         <hr />
       </HeaderDiv>
       </Zoom> 
+      
       </figure>
     );
   }

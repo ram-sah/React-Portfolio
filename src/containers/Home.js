@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import { CenteredHeader1, CenteredHeader} from './App.js'
 import '../theme/globalStyle'
 import './Style.css'
-// Bounce Animation
-import Bounce from 'react-reveal/Bounce';
+// Zoom Animation
+import Zoom from 'react-reveal/Zoom';
 
 class Home extends Component {
   render() {
     return (
       // <section style={ {width: "1000px" }}></section> 
-      <Bounce >    
+      <Zoom >    
       <div className='cardMain'> 
         <CenteredHeader> <strong> WELCOME !</strong> </CenteredHeader>
         <hr className="divider my-4" />
@@ -20,7 +20,7 @@ class Home extends Component {
         I enjoy coding, I have a passion for building awesome architecture, design with code, and developing to create user-friendly applications and serve the needs of the business with a balanced delivery of high-quality solutions. I have completed my Full-Stack Web Developer course from <a href="https://www.upenn.edu/" target="_blank">University of Pennsylvania,</a> Penn LPS Coding Bootcamp, Philadelphia in 2020 with Grade "A+", where I honed my skills in HTML5, CSS3, Bootstrap, JavaScript, ES6, JQuery, ReactJs, Redux, Handlebars, Ajax, APIs, Nodejs, Node Express, C#, MySql, MongoDB, Heroku, Git, GitHub. I have a Bachelor's Degree in Mathematics and a Masters's Degree in Social Science from <a href="http://www.tribhuvan-university.edu.np/" target="_blank">Tribhuvan University </a>, Nepal in 2008.
         </div>
       </div>
-      </Bounce>
+      </Zoom>
     );
   }
 }
