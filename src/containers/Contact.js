@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { CenteredHeader, CenteredHeader1 } from './App.js'
-import "./Style.css";
+import "./Styles.scss";
 // Slide-left
 import Slide from 'react-reveal/Slide';
 

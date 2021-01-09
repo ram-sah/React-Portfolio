@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { CenteredHeader1, CenteredHeader} from './App.js'
 import '../theme/globalStyle'
-import './Style.css'
+import './Styles.scss'
 // Zoom Animation
 import Zoom from 'react-reveal/Zoom';
 

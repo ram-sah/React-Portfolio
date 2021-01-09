@@ -4,7 +4,7 @@
 
 // export default function Shapes() {
 //   // const [width, setWidth] = useState(null);
-//   const [show, setShow] = useState(false);//change true if want without mouse 
+//   const [show, setShow] = useState(false);//change true if for no mouse hover
 //   const confettiRef = useRef(null);
 
 //   // useEffect(() => {

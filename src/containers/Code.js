@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import './Style.css';
+import './Styles.scss';
 import { ColorScheme } from "../theme/styleConstants";
 import { CenteredHeader } from "./App.js";
 // Zoom-out
@@ -49,7 +49,7 @@ const UsedItem = styled.ul`
   font-size: 20px;
   font-weight: 800;
   letter-spacing: 0.5px;
-  animation: blinkingBackground 2s infinite;
+  animation: blinkingBackground 10s infinite;
   @keyframes blinkingBackground{
     0%		{ background-color: #10c018;}
     25%		{ background-color: #1056c0;}

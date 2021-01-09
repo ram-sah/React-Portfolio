@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Pdf from '../assets/RAM-resume.pdf';
 import Nav from './Nav.js';
 import Animate from './Animate.js';
-import './Style.css';
+import './Styles.scss';
 import Particles from './Background.js'
 // import { ColorScheme } from "../theme/styleConstants";
 // Zoom-out
@@ -58,7 +58,7 @@ class Header extends Component {
         <Link to="/">
           <ProfileImage className='img' src={require('../assets/ram.jpg')} alt='Ram Sah' />  
           <ProfileTitle><Animate /></ProfileTitle>   
-          <hr className="divider my-4" /> <Particles />
+          <hr className="divider my-4" /> 
         </Link>
         <div>
           <NavLink to='/'>ABOUT</NavLink>
@@ -67,6 +67,7 @@ class Header extends Component {
           <NavLink href={Pdf} target="_black">RESUME</NavLink>
         </div>
         <hr />
+        <Particles />
       </HeaderDiv>
       </Zoom> 
       

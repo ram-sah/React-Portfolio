@@ -22,7 +22,7 @@ const AppDiv = styled.div`
 export const CenteredHeader = styled.h2`
   text-align: center;
   margin-top: 2em;
-  animation: blinkingText 2s infinite;
+  animation: blinkingText 10s infinite;
   @keyframes blinkingText{
     0%		{ color: #0a1af5;}   
     25%		{ color: #ef0a1a;}
