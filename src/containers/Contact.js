@@ -60,11 +60,11 @@ class Contact extends Component {
           </CenteredHeader1>
 
           <div className="row">
-            <div className="phoneMargin col-lg-6 text-center mb-5 mb-lg-0">
+            <div className="phoneMargin col-sm-12 col-md-6 col-lg-6 text-center mb-5 mb-lg-0">
               <i className="phoneSize">{"\uD83D\uDCF1"}</i>
               <div> <a href="tel:4846399591"> +1 (484) 639-9591</a></div>
             </div>
-            <div className="col-lg-4 mr-auto text-center">
+            <div className="col-sm-12 col-md-6 col-lg-6 mr-auto text-center">
               <p className="hi mailSize fa fa-envelope fa-fw fa-2x"> </p>
               <div className="hi"> <a href="mailto:rsah1@asu.edu" target="_blank">rsah1@asu.edu</a></div>
             </div>

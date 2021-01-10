@@ -31,7 +31,7 @@ class Footer extends Component {
     return (
       <FooterDiv>
 
-        <div className="col-sm-12 col-md-6 col-lg-5 linkList" style= {{textAlign: 'left' }} >
+        <div className="col-sm-12 col-md-5 col-lg-4 linkList" style= {{textAlign: 'left' }} >
           <ul>
             <a>Name: Ram Sah</a><br />
             <a>Address: West chester, PA-19380</a><br />
@@ -42,7 +42,7 @@ class Footer extends Component {
             <a href="https://www.twitter.com/home" target="_blank">https://www.twitter.com/home</a><br />
           </ul>
         </div>
-        <div className="col-sm-12 col-md-6 col-lg-7 linkIcon"  style= {{textAlign: 'left' }} >
+        <div className="col-sm-12 col-md-6 col-lg-7 linkIcon"  style= {{textAlign: 'left'}} >
           <SocialIconList>
             <SocialIcon><a href="mailto:rsah1@asu.edu" target="_blank"><FAIcon className="fa fa-envelope fa-fw fa-2x aaz1" /></a></SocialIcon>
             <SocialIcon><a href="https://www.linkedin.com/in/ram-sah" target="_blank"><FAIcon className="fa fa-linkedin fa-fw fa-2x aaz1" /></a></SocialIcon>

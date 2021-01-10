@@ -93,14 +93,15 @@ injectGlobal`
       padding:2px 9px 2px 11px;
       margin: 0px;
     }
-    .aaz {      
-      margin-left: 40%
-     }
+   
     .home {
       font-size: 20px;
     }
     .row {
       margin-right: -7px!important;
+    }
+    .col-sm-12 {
+      width: 100%
     }
   }
   html,body{
