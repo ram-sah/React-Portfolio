@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../src/App.css';
+import '../../src/App.scss';
 import Typical from 'react-typical';
 function Animate() {
   return (

@@ -106,6 +106,6 @@ injectGlobal`
   }
   html,body{
     overflow-x: hidden;
-}
+  }
 }
 `;

@@ -14,13 +14,12 @@ const ProfileImage = styled.img`
   width: 8em;
   height: 9em;
   border-radius: 50%;
-  margin-top: -70px;
+  margin-top: -5vh;
   border: 2px solid #293;
   @media (max-width: 600px) {   
-    margin-top: -20px;
+    margin-top: -3vh;
     }   
 `;
-
 const ProfileTitle = styled.h1`
   color: white;
   font-family: cursive,Times, serif;
@@ -30,7 +29,7 @@ const ProfileTitle = styled.h1`
 `
 
 const HeaderDiv = styled.div`
-  padding-top: 5vh;
+  padding-top: 0vh;
   text-align: center;
   font-family: 'Zilla Slab Highlight', sans-serif;
    

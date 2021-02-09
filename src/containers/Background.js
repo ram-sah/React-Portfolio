@@ -9,9 +9,9 @@ const Background = () => {
       params={{
 	    "particles": {
 	        "number": {
-	            "value": 400,
+	            "value": 430,
 	            "density": {
-	                "enable": false
+	            "enable": false
 	            }
 	        },
 	        "size": {

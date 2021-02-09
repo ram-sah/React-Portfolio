@@ -34,7 +34,6 @@ const PortButtonContainer = styled.div`
     width: 50%;
   }
 `;
-
 const UsedItem = styled.ul`
   display: inline-block;
   padding: 7px 7px 7px;
@@ -49,7 +48,7 @@ const UsedItem = styled.ul`
   font-size: 20px;
   font-weight: 800;
   letter-spacing: 0.5px;
-  animation: blinkingBackground 10s infinite;
+  animation: blinkingBackground 12s infinite;
   @keyframes blinkingBackground{
     0%		{ background-color: #10c018;}
     25%		{ background-color: #1056c0;}
@@ -78,7 +77,6 @@ const Skill = styled.ul`
   
   }     
 `;
-
 class Code extends Component {
   render() {
     return (
@@ -187,7 +185,6 @@ class Code extends Component {
                   <div className="portfolio-box-caption">
                     <div className="project-category text-white-50">&#9758; Live-Demo: Eat da Burger App</div>
                     <hr className="divider2 my-4" />
-
                     <div className="project-name">It is a restaurant App that lets users input the names of the burgers they'd like the eat.
                     it will generate under the to be eaten heading. User can Devour that burger by clicking on it.</div>
                     <hr className="line" />
@@ -381,8 +378,7 @@ class Code extends Component {
                         <li>Bcryptjs</li>
                         <li>jsonwebtoken</li>
                         <li>QRcode</li>
-                        <li>Travis</li>
-                        <li>Eslint</li>
+                        <li>Travis/ Eslint</li>
                         <li>React-google-maps</li>
                         <li>CSS3/ Bootstrap</li>
                         <li>MongoDB</li>
@@ -396,15 +392,12 @@ class Code extends Component {
                   </div>
                 </div><hr className="divider1" />
               </div>
-
             </div>
-
           </div>
         </div>
         <PortButtonContainer>
           <PortButton href="#">HOME ▲</PortButton>
         </PortButtonContainer>
-        {/* </div> */}
       </div>
     );
   }

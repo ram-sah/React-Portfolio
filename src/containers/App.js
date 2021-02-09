@@ -50,7 +50,6 @@ const ContainerDiv = styled.div`
 class App extends Component {
   render() {
     return (
-
       <div>
         <AppDiv>
           {/* <Confetti /> */}

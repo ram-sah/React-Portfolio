@@ -11,6 +11,9 @@ const SocialIconList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 8% 0% 0% 7%;
+  @media (max-width: 600px) {
+    margin: 0%;
+  }
 `;
 
 const SocialIcon = styled.li`
@@ -38,7 +41,7 @@ class Footer extends Component {
             <a>Phone: +1 (484) 639-9591</a><br />
             <a href="mailto:rsah1@asu.edu" target="_blank">Email: rsah1@asu.edu</a><br />
             <a href="https://www.github.com/ram-sah" target="_blank">https://www.github.com/ram-sah</a><br />
-            <a href="https://www.linkedin.com/in/ram-sah" target="_blank">https://www.linkedin.com/in/ram-sah</a><br />
+            <a href="https://www.linkedin.com/in/ram-sah" target="_blank">https://linkedin.com/in/ram-sah</a><br />
             <a href="https://www.twitter.com/home" target="_blank">https://www.twitter.com/home</a><br />
           </ul>
         </div>
