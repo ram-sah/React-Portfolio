@@ -34,18 +34,18 @@ class Footer extends Component {
     return (
       <FooterDiv>
 
-        <div className="col-sm-12 col-md-5 col-lg-4 linkList" style= {{textAlign: 'left' }} >
+        <div className="col-sm-12 col-md-5 col-lg-4 linkList" style={{ textAlign: 'left' }} >
           <ul>
             <a>Name: Ram Sah</a><br />
-            <a>Address: West chester, PA-19380</a><br />
-            <a>Phone: +1 (484) 639-9591</a><br />
             <a href="mailto:rsah1@asu.edu" target="_blank">Email: rsah1@asu.edu</a><br />
+            <a>Phone: +1 (484) 639-9591</a><br />
+            <a href="https://www.google.com/search?sxsrf=ALeKk00JYbw1NslomCMIngYNANA_SWS2fA%3A1613070980028&source=hp&ei=g4IlYPvYO8aIggfO9oKwCg&iflsig=AINFCbYAAAAAYCWQlF3bkjtyLTvFjxYFlrGGpPk5HjLn&q=1308+West+Chester+Pike%2C+West+Chester%2C+PA&oq=map+1308&gs_lcp=Cgdnd3Mtd2l6EAEYADICCCYyAggmMgIIJjICCCYyAggmMgYIABAWEB46BAgjECc6BQgAEJECOgsILhDHARCjAhCRAjoICC4QsQMQgwE6CwguELEDEMcBEKMCOgIIADoICAAQsQMQgwE6CwgAELEDEIMBEJECOgUIABCxAzoICAAQsQMQkQI6BQguEJMCOggILhDHARCvAVCZDFjVM2CRQ2gAcAB4AIABlgKIAdsJkgEFMy4zLjKYAQCgAQGqAQdnd3Mtd2l6&sclient=gws-wiz" target="blank">Address: West chester, PA-19380</a><br />
             <a href="https://www.github.com/ram-sah" target="_blank">https://www.github.com/ram-sah</a><br />
             <a href="https://www.linkedin.com/in/ram-sah" target="_blank">https://linkedin.com/in/ram-sah</a><br />
             <a href="https://www.twitter.com/home" target="_blank">https://www.twitter.com/home</a><br />
           </ul>
         </div>
-        <div className="col-sm-12 col-md-6 col-lg-7 linkIcon"  style= {{textAlign: 'left'}} >
+        <div className="col-sm-12 col-md-6 col-lg-7 linkIcon" style={{ textAlign: 'left' }} >
           <SocialIconList>
             <SocialIcon><a href="mailto:rsah1@asu.edu" target="_blank"><FAIcon className="fa fa-envelope fa-fw fa-2x aaz1" /></a></SocialIcon>
             <SocialIcon><a href="https://www.linkedin.com/in/ram-sah" target="_blank"><FAIcon className="fa fa-linkedin fa-fw fa-2x aaz1" /></a></SocialIcon>

@@ -213,6 +213,7 @@ figure.aboutMe {
   padding-top: 10px;
   font-size: 1.6rem;
   text-align: center;
+  font-weight: bold;
 }
 
 .dropdown-divider {
@@ -789,7 +790,7 @@ hr {
     font-size: 2rem !important;
     line-height: 1.9;
   }
-  .col-sm-12 {
+  .col-sm-12 ul{
     text-align: center!important;
     padding: 0!important;
   }
@@ -800,7 +801,6 @@ hr {
     margin-left: 0em!important;
   }
 }
-
 @media (max-width: 560px) {
   .text-justify {
     padding: 1rem !important;
@@ -810,14 +810,12 @@ hr {
   .text-white-50 {
     font-size: 1.7rem;
   }
-
   .project-name {
     font-size: 1.4rem !important;
     padding: 10px !important;
     line-height: normal;
   }
 }
-
 @media (max-width: 400px) {
   .row {
     width: auto !important;
@@ -850,7 +848,6 @@ hr {
     transform: rotateY(180deg);
   }
 }
-
 .card-flip {
   display: grid;
   grid-template: 1fr / 1fr;
@@ -863,7 +860,6 @@ hr {
     transform-style: preserve-3d;
   }
 }
-
 .card-container:hover .card-flip {
   transform: rotateY(180deg);
 }
