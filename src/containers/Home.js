@@ -12,7 +12,7 @@ class Home extends Component {
       <Zoom >
       <div className='cardMain'>
         <CenteredHeader> <strong> WELCOME !</strong> </CenteredHeader>
-        <hr className="divider my-4" />
+        
         <CenteredHeader1><strong>Hello 👋 !<br/>  I'm Ram, I live with creativity.</strong></CenteredHeader1>
         <div className="home">
         Thank you for stopping by to visit my portfolio. I am excited to be a Full-Stack JavaScript Developer.
